@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { useRouter } from 'next/navigation';
 import ShopSlotTitle from './ShopSlotTitle';
@@ -14,11 +14,16 @@ function formatTime(seconds) {
   return m > 0 ? `${m}m ${sec}s` : `${sec}s`;
 }
 
-function SlotContent({ icon, title }) {
+function SlotContent({ icon, title, onIconPointerEnter, onIconPointerMove, onIconPointerLeave }) {
   return (
     <span className="relative block transition-transform duration-200 group-hover:-translate-y-2">
       <img src="/images/shared/shop_slot.png" alt="" aria-hidden="true" className="h-full w-full object-contain" />
-      <span className="absolute left-1/2 top-[35%] h-[60%] w-[60%] -translate-x-1/2 -translate-y-1/2">
+      <span
+        className="absolute left-1/2 top-[35%] h-[60%] w-[60%] -translate-x-1/2 -translate-y-1/2"
+        onPointerEnter={onIconPointerEnter}
+        onPointerMove={onIconPointerMove}
+        onPointerLeave={onIconPointerLeave}
+      >
         <img src={icon} alt="" aria-hidden="true" className="h-full w-full object-contain" />
       </span>
       <span className="absolute left-1/2 top-[83%] w-full -translate-x-1/2 -translate-y-1/2 px-4">
@@ -42,61 +47,26 @@ export default function ShopSlot({ href, icon, title, subtitle, productionTime, 
     if (rafRef.current) cancelAnimationFrame(rafRef.current);
   }, []);
 
-  function showTooltip() {
+  function showTooltip(event) {
     if (!tooltipEnabled) return;
     clearTimeout(hideTimer.current);
-    // compute position
-    const el = containerRef.current;
-    if (el && typeof document !== 'undefined') {
-      // if we already have pointer coords, prefer them (mouse follow mode)
-      // otherwise position above the element center
-      if (pos && pos.left && pos.top) {
-        // keep current pos
-      } else {
+    if (event && typeof window !== 'undefined') {
+      setPos({ left: event.clientX + window.scrollX, top: event.clientY + window.scrollY });
+    } else {
+      const el = containerRef.current;
+      if (el && typeof document !== 'undefined') {
         const rect = el.getBoundingClientRect();
         const left = rect.left + rect.width / 2 + window.scrollX;
-        const top = rect.top + window.scrollY; // top of element
+        const top = rect.top + window.scrollY;
         setPos({ left, top });
       }
     }
     setTooltipVisible(true);
   }
 
-  function handlePointerMove(e) {
-    lastPointerType.current = e.pointerType;
-    if (e.pointerType === 'touch') return;
-    const left = e.clientX + window.scrollX;
-    const top = e.clientY + window.scrollY;
-    if (rafRef.current) cancelAnimationFrame(rafRef.current);
-    rafRef.current = requestAnimationFrame(() => setPos({ left, top }));
-  }
-
-  function hideTooltipSoon() {
-    if (!tooltipEnabled) return;
-    clearTimeout(hideTimer.current);
-    hideTimer.current = setTimeout(() => setTooltipVisible(false), 2200);
-  }
-
   function handleClick(e) {
     if (!href) return;
-    const pointer = lastPointerType.current;
-    const isTouchEvent = pointer === 'touch';
-    if (!tooltipEnabled) {
-      router.push(href);
-      return;
-    }
-
-    if (isTouchEvent) {
-      if (tooltipVisible) {
-        router.push(href);
-      } else {
-        showTooltip();
-        hideTooltipSoon();
-      }
-    } else {
-      // mouse/pen/keyboard: navigate immediately
-      router.push(href);
-    }
+    router.push(href);
   }
 
   const timeText = formatTime(productionTime);
@@ -105,18 +75,6 @@ export default function ShopSlot({ href, icon, title, subtitle, productionTime, 
     <div
       ref={containerRef}
       className="relative group inline-block text-center focus:outline-none cursor-pointer"
-      onPointerEnter={(e) => {
-        lastPointerType.current = e.pointerType;
-        if (tooltipEnabled && e.pointerType !== 'touch') showTooltip();
-      }}
-      onPointerMove={handlePointerMove}
-      onPointerLeave={(e) => {
-        lastPointerType.current = e.pointerType;
-        if (tooltipEnabled && e.pointerType !== 'touch') setTooltipVisible(false);
-      }}
-      onPointerDown={(e) => {
-        lastPointerType.current = e.pointerType;
-      }}
       onClick={handleClick}
       role={href ? 'link' : 'button'}
       tabIndex={0}
@@ -124,7 +82,26 @@ export default function ShopSlot({ href, icon, title, subtitle, productionTime, 
         if (e.key === 'Enter' || e.key === ' ') handleClick();
       }}
     >
-      <SlotContent icon={icon} title={title} />
+      <SlotContent
+        icon={icon}
+        title={title}
+        onIconPointerEnter={(e) => {
+          lastPointerType.current = e.pointerType;
+          if (tooltipEnabled && e.pointerType !== 'touch') showTooltip(e);
+        }}
+        onIconPointerMove={(e) => {
+          lastPointerType.current = e.pointerType;
+          if (!tooltipEnabled || e.pointerType === 'touch') return;
+          const left = e.clientX + window.scrollX;
+          const top = e.clientY + window.scrollY;
+          if (rafRef.current) cancelAnimationFrame(rafRef.current);
+          rafRef.current = requestAnimationFrame(() => setPos({ left, top }));
+        }}
+        onIconPointerLeave={(e) => {
+          lastPointerType.current = e.pointerType;
+          if (tooltipEnabled && e.pointerType !== 'touch') setTooltipVisible(false);
+        }}
+      />
 
       {tooltipEnabled && tooltipVisible && typeof document !== 'undefined'
         ? createPortal(
