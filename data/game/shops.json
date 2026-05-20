@@ -1,0 +1,261 @@
+[
+  {
+    "id": "bakery",
+    "imageUrl": "/images/shared/game/shops/bakery_icon.png",
+    "names": {
+      "zh-Hant": "麵包店",
+      "en": "Bakery",
+      "ja": "パン屋"
+    },
+    "stats": {
+      "unlockLevel": 2,
+      "maxLevel": 10,
+      "upgradeTime": 30
+    },
+    "recipes": [
+      {
+        "id": "products/bread",
+        "stats": {
+          "unlockLevel": 2,
+          "productionTime": 300,
+          "experience": 3,
+          "count": 1,
+          "input": [
+            { "id": "crops/wheat", "quantity": 3 }
+          ]
+        }
+      },
+      {
+        "id": "products/cornbread",
+        "stats": {
+          "unlockLevel": 7,
+          "productionTime": 900,
+          "experience": 5,
+          "count": 1,
+          "input": [
+            { "id": "crops/corn", "quantity": 3 },
+            { "id": "produces/egg", "quantity": 1 }
+          ]
+        }
+      },
+      {
+        "id": "products/melon-bread",
+        "stats": {
+          "unlockLevel": 8,
+          "productionTime": 1200,
+          "experience": 7,
+          "count": 1,
+          "input": [
+            { "id": "crops/wheat", "quantity": 2 },
+            { "id": "products/sugar", "quantity": 1 }
+          ]
+        }
+      },
+      {
+        "id": "products/doughnut",
+        "stats": {
+          "unlockLevel": 22,
+          "productionTime": 2700,
+          "experience": 18,
+          "count": 1,
+          "input": [
+            { "id": "crops/wheat", "quantity": 2 },
+            { "id": "products/butter", "quantity": 1 },
+            { "id": "products/sugar", "quantity": 1 }
+          ]
+        }
+      },
+      {
+        "id": "products/croquette",
+        "stats": {
+          "unlockLevel": 26,
+          "productionTime": 5400,
+          "experience": 27,
+          "count": 1,
+          "input": [
+            { "id": "crops/potato", "quantity": 3 },
+            { "id": "crops/wheat", "quantity": 2 },
+            { "id": "produces/egg", "quantity": 2 },
+            { "id": "crops/carrot", "quantity": 2 }
+          ]
+        }
+      },
+      {
+        "id": "products/panini",
+        "stats": {
+          "unlockLevel": 32,
+          "productionTime": 7200,
+          "experience": 25,
+          "count": 1,
+          "input": [
+            { "id": "crops/wheat", "quantity": 2 },
+            { "id": "products/cheese", "quantity": 1 },
+            { "id": "produces/pork", "quantity": 1 }
+          ]
+        }
+      },
+      {
+        "id": "products/macaron",
+        "stats": {
+          "unlockLevel": 39,
+          "productionTime": 10800,
+          "experience": null,
+          "count": 1,
+          "input": [
+            { "id": "produces/egg", "quantity": 3 },
+            { "id": "products/sugar", "quantity": 2 },
+            { "id": "products/butter", "quantity": 2 }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "feedmaker",
+    "imageUrl": "/images/shared/game/shops/feed_mill_icon.png",
+    "names": {
+      "zh-Hant": "飼料製造機",
+      "en": "Feed Mill",
+      "ja": "エサ製造機"
+    },
+    "stats": {
+      "unlockLevel": 3,
+      "maxLevel": 10,
+      "upgradeTime": 40
+    },
+    "recipes": [
+      {
+        "id": "products/chicken-feed",
+        "stats": {
+          "unlockLevel": 3,
+          "productionTime": 300,
+          "experience": 1,
+          "count": 1,
+          "input": [
+            { "id": "crops/wheat", "quantity": 2 },
+            { "id": "crops/corn", "quantity": 1 }
+          ]
+        }
+      },
+      {
+        "id": "products/cow-feed",
+        "stats": {
+          "unlockLevel": 6,
+          "productionTime": 600,
+          "experience": 2,
+          "count": 1,
+          "input": [
+            { "id": "crops/corn", "quantity": 2 },
+            { "id": "crops/soybean", "quantity": 1 }
+          ]
+        }
+      },
+      {
+        "id": "products/pig-feed",
+        "stats": {
+          "unlockLevel": 9,
+          "productionTime": 1800,
+          "experience": 2,
+          "count": 1,
+          "input": [
+            { "id": "crops/soybean", "quantity": 2 },
+            { "id": "crops/carrot", "quantity": 1 },
+            { "id": "crops/wheat", "quantity": 1 }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "dairyworkshop",
+    "imageUrl": "/images/shared/game/shops/dairy_icon.png",
+    "names": {
+      "zh-Hant": "酪農工房",
+      "en": "Dairy Workshop",
+      "ja": "酪農工場"
+    },
+    "stats": {
+      "unlockLevel": 6,
+      "maxLevel": 10,
+      "upgradeTime": 1500
+    },
+    "recipes": [
+      {
+        "id": "products/cream",
+        "stats": {
+          "unlockLevel": 6,
+          "productionTime": 900,
+          "experience": 6,
+          "count": 1,
+          "input": [
+            { "id": "produces/milk", "quantity": 1 }
+          ]
+        }
+      },
+      {
+        "id": "products/butter",
+        "stats": {
+          "unlockLevel": 8,
+          "productionTime": 1800,
+          "experience": 10,
+          "count": 1,
+          "input": [
+            { "id": "produces/milk", "quantity": 2 }
+          ]
+        }
+      },
+      {
+        "id": "products/cheese",
+        "stats": {
+          "unlockLevel": 20,
+          "productionTime": 3000,
+          "experience": 15,
+          "count": 1,
+          "input": [
+            { "id": "produces/milk", "quantity": 3 }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "sugarmaker",
+    "imageUrl": "/images/shared/game/shops/sugar_pot_icon.png",
+    "names": {
+      "zh-Hant": "製糖機",
+      "en": "Sugar Maker",
+      "ja": "製糖機"
+    },
+    "stats": {
+      "unlockLevel": 8,
+      "maxLevel": 10,
+      "upgradeTime": 1800
+    },
+    "recipes": [
+      {
+        "id": "products/sugar",
+        "stats": {
+          "unlockLevel": 8,
+          "productionTime": 1200,
+          "experience": 4,
+          "count": 1,
+          "input": [
+            { "id": "crops/sugar-beet", "quantity": 1 }
+          ]
+        }
+      },
+      {
+        "id": "products/syrup",
+        "stats": {
+          "unlockLevel": 18,
+          "productionTime": 2100,
+          "experience": 6,
+          "count": 1,
+          "input": [
+            { "id": "crops/sugar-beet", "quantity": 3 }
+          ]
+        }
+      }
+    ]
+  }
+]

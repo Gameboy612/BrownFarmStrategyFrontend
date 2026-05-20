@@ -1,0 +1,216 @@
+{
+  "sourceUrl": "https://brownfarminfo.blogspot.com/p/brownfarmwiki.html#building",
+  "updatedFrom": "BrownFarm wiki production buildings",
+  "items": [
+    {
+      "id": "bread",
+      "imageUrl": "/images/shared/game/products/bread_roll_icon.png",
+      "names": {
+        "zh-Hant": "麵包",
+        "en": "Bread",
+        "ja": "パン"
+      },
+      "stats": {
+        "unlockLevel": 2,
+        "defaultSellPrice": 6,
+        "maxSellPrice": 21
+      }
+    },
+    {
+      "id": "cornbread",
+      "imageUrl": "/images/shared/game/products/corn_bread_icon.png",
+      "names": {
+        "zh-Hant": "玉米麵包",
+        "en": "Cornbread",
+        "ja": "コーンブレッド"
+      },
+      "stats": {
+        "unlockLevel": 7,
+        "defaultSellPrice": 14,
+        "maxSellPrice": 50
+      }
+    },
+    {
+      "id": "melon-bread",
+      "imageUrl": "/images/shared/game/products/melon_bread_icon.png",
+      "names": {
+        "zh-Hant": "哈密瓜麵包",
+        "en": "Melon Bread",
+        "ja": "メロンパン"
+      },
+      "stats": {
+        "unlockLevel": 8,
+        "defaultSellPrice": 16,
+        "maxSellPrice": 57
+      }
+    },
+    {
+      "id": "doughnut",
+      "imageUrl": "/images/shared/game/products/doughnut_icon.png",
+      "names": {
+        "zh-Hant": "甜甜圈",
+        "en": "Doughnut",
+        "ja": "ドーナツ"
+      },
+      "stats": {
+        "unlockLevel": 22,
+        "defaultSellPrice": 41,
+        "maxSellPrice": 147
+      }
+    },
+    {
+      "id": "croquette",
+      "imageUrl": "/images/shared/game/products/croquette_icon.png",
+      "names": {
+        "zh-Hant": "可樂餅",
+        "en": "Croquette",
+        "ja": "コロッケ"
+      },
+      "stats": {
+        "unlockLevel": 26,
+        "defaultSellPrice": 61,
+        "maxSellPrice": 219
+      }
+    },
+    {
+      "id": "panini",
+      "imageUrl": "/images/shared/game/products/panini_icon.png",
+      "names": {
+        "zh-Hant": "帕尼尼",
+        "en": "Panini",
+        "ja": "パニーニ"
+      },
+      "stats": {
+        "unlockLevel": 32,
+        "defaultSellPrice": 57,
+        "maxSellPrice": 205
+      }
+    },
+    {
+      "id": "macaron",
+      "imageUrl": "/images/shared/game/products/macaroon_icon.png",
+      "names": {
+        "zh-Hant": "馬卡龍",
+        "en": "Macaron",
+        "ja": "マカロン"
+      },
+      "stats": {
+        "unlockLevel": 39,
+        "defaultSellPrice": 80,
+        "maxSellPrice": 288
+      }
+    },
+    {
+      "id": "chicken-feed",
+      "imageUrl": "/images/shared/game/products/chicken_feed_icon.png",
+      "names": {
+        "zh-Hant": "雞飼料",
+        "en": "Chicken Feed",
+        "ja": "ニワトリのエサ"
+      },
+      "stats": {
+        "unlockLevel": 3,
+        "defaultSellPrice": 3,
+        "maxSellPrice": 10
+      }
+    },
+    {
+      "id": "cow-feed",
+      "imageUrl": "/images/shared/game/products/cow_feed_icon.png",
+      "names": {
+        "zh-Hant": "牛飼料",
+        "en": "Cow Feed",
+        "ja": "牛のエサ"
+      },
+      "stats": {
+        "unlockLevel": 6,
+        "defaultSellPrice": 4,
+        "maxSellPrice": 14
+      }
+    },
+    {
+      "id": "pig-feed",
+      "imageUrl": "/images/shared/game/products/pig_feed_icon.png",
+      "names": {
+        "zh-Hant": "豬飼料",
+        "en": "Pig Feed",
+        "ja": "ブタのエサ"
+      },
+      "stats": {
+        "unlockLevel": 9,
+        "defaultSellPrice": 4,
+        "maxSellPrice": 14
+      }
+    },
+    {
+      "id": "cream",
+      "imageUrl": "/images/shared/game/products/cream_icon.png",
+      "names": {
+        "zh-Hant": "鮮奶油",
+        "en": "Cream",
+        "ja": "生クリーム"
+      },
+      "stats": {
+        "unlockLevel": 6,
+        "defaultSellPrice": 15,
+        "maxSellPrice": 54
+      }
+    },
+    {
+      "id": "butter",
+      "imageUrl": "/images/shared/game/products/butter_icon.png",
+      "names": {
+        "zh-Hant": "奶油",
+        "en": "Butter",
+        "ja": "バター"
+      },
+      "stats": {
+        "unlockLevel": 8,
+        "defaultSellPrice": 25,
+        "maxSellPrice": 90
+      }
+    },
+    {
+      "id": "cheese",
+      "imageUrl": "/images/shared/game/products/cheese_icon.png",
+      "names": {
+        "zh-Hant": "起士",
+        "en": "Cheese",
+        "ja": "チーズ"
+      },
+      "stats": {
+        "unlockLevel": 20,
+        "defaultSellPrice": 33,
+        "maxSellPrice": 118
+      }
+    },
+    {
+      "id": "sugar",
+      "imageUrl": "/images/shared/game/products/sugar_icon.png",
+      "names": {
+        "zh-Hant": "砂糖",
+        "en": "Sugar",
+        "ja": "砂糖"
+      },
+      "stats": {
+        "unlockLevel": 8,
+        "defaultSellPrice": 10,
+        "maxSellPrice": 36
+      }
+    },
+    {
+      "id": "syrup",
+      "imageUrl": "/images/shared/game/products/syrup_icon.png",
+      "names": {
+        "zh-Hant": "糖漿",
+        "en": "Syrup",
+        "ja": "シロップ"
+      },
+      "stats": {
+        "unlockLevel": 18,
+        "defaultSellPrice": 22,
+        "maxSellPrice": 79
+      }
+    }
+  ]
+}

@@ -81,10 +81,10 @@ export default function CropsPage() {
                     </td>
                     <td className="border-b border-line px-4 py-4 font-medium text-xl text-ink">{crop.names[localeName]}</td>
                     <td className="border-b border-line px-4 py-4"><Level level={crop.stats.unlockLevel} size={48} /></td>
-                    <td className="border-b border-line px-4 py-4">{formatGrowthTime(crop.stats.growthTime, locale)}</td>
+                    <td className="border-b border-line px-4 py-4">{formatGrowthTime(crop.stats.cropStats?.growthTime ?? crop.stats.growthTime, locale)}</td>
                     <td className="border-b border-line px-4 py-4"><CoinPrice value={crop.stats.defaultSellPrice} /></td>
                     <td className="border-b border-line px-4 py-4"><CoinPrice value={crop.stats.maxSellPrice} /></td>
-                    <td className="border-b border-line px-4 py-4"><Experience value={crop.stats.experience} /></td>
+                    <td className="border-b border-line px-4 py-4"><Experience value={crop.stats.cropStats?.experience ?? crop.stats.experience} /></td>
                   </tr>
                 ))}
               </tbody>

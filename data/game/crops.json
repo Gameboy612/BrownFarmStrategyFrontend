@@ -12,10 +12,12 @@
       },
       "stats": {
         "unlockLevel": 1,
-        "growthTime": 60,
-        "experience": 1,
         "defaultSellPrice": 1,
-        "maxSellPrice": 3.6
+        "maxSellPrice": 3.6,
+        "cropStats": {
+            "growthTime": 60,
+            "experience": 1
+        }
       }
     },
     {
@@ -28,8 +30,10 @@
       },
       "stats": {
         "unlockLevel": 2,
-        "growthTime": 180,
-        "experience": 1,
+        "cropStats": {
+          "growthTime": 180,
+          "experience": 1
+        },
         "defaultSellPrice": 2,
         "maxSellPrice": 7.2
       }
@@ -44,8 +48,10 @@
       },
       "stats": {
         "unlockLevel": 4,
-        "growthTime": 600,
-        "experience": 1,
+        "cropStats": {
+          "growthTime": 600,
+          "experience": 1
+        },
         "defaultSellPrice": 3,
         "maxSellPrice": 10.8
       }
@@ -60,8 +66,10 @@
       },
       "stats": {
         "unlockLevel": 8,
-        "growthTime": 1200,
-        "experience": 2,
+        "cropStats": {
+          "growthTime": 1200,
+          "experience": 2
+        },
         "defaultSellPrice": 5,
         "maxSellPrice": 18.0
       }
@@ -76,8 +84,10 @@
       },
       "stats": {
         "unlockLevel": 9,
-        "growthTime": 1200,
-        "experience": 2,
+        "cropStats": {
+          "growthTime": 1200,
+          "experience": 2
+        },
         "defaultSellPrice": 4,
         "maxSellPrice": 14.4
       }
@@ -92,8 +102,10 @@
       },
       "stats": {
         "unlockLevel": "待確認",
-        "growthTime": 5400,
-        "experience": 5,
+        "cropStats": {
+          "growthTime": 5400,
+          "experience": 5
+        },
         "defaultSellPrice": 10,
         "maxSellPrice": 36.0
       }
@@ -108,8 +120,10 @@
       },
       "stats": {
         "unlockLevel": "待確認",
-        "growthTime": 7200,
-        "experience": 4,
+        "cropStats": {
+          "growthTime": 7200,
+          "experience": 4
+        },
         "defaultSellPrice": 7,
         "maxSellPrice": 25.2
       }
@@ -124,8 +138,10 @@
       },
       "stats": {
         "unlockLevel": 25,
-        "growthTime": 180,
-        "experience": 1,
+        "cropStats": {
+          "growthTime": 180,
+          "experience": 1
+        },
         "defaultSellPrice": 2,
         "maxSellPrice": 7.2
       }
@@ -140,8 +156,10 @@
       },
       "stats": {
         "unlockLevel": 28,
-        "growthTime": 21600,
-        "experience": 6,
+        "cropStats": {
+          "growthTime": 21600,
+          "experience": 6
+        },
         "defaultSellPrice": 12,
         "maxSellPrice": 43.2
       }
@@ -156,8 +174,10 @@
       },
       "stats": {
         "unlockLevel": 32,
-        "growthTime": 5400,
-        "experience": 4,
+        "cropStats": {
+          "growthTime": 5400,
+          "experience": 4
+        },
         "defaultSellPrice": 9,
         "maxSellPrice": 32.4
       }
@@ -172,8 +192,10 @@
       },
       "stats": {
         "unlockLevel": 34,
-        "growthTime": 28800,
-        "experience": 7,
+        "cropStats": {
+          "growthTime": 28800,
+          "experience": 7
+        },
         "defaultSellPrice": 14,
         "maxSellPrice": 50.4
       }
@@ -188,8 +210,10 @@
       },
       "stats": {
         "unlockLevel": 41,
-        "growthTime": 2700,
-        "experience": "待確認",
+        "cropStats": {
+          "growthTime": 2700,
+          "experience": 4
+        },
         "defaultSellPrice": 8,
         "maxSellPrice": 28.8
       }

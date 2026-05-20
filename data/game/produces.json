@@ -1,0 +1,78 @@
+{
+  "sourceUrl": null,
+  "updatedFrom": null,
+  "items": [
+    {
+      "id": "egg",
+      "imageUrl": "/images/shared/game/produces/egg_icon.png",
+      "names": {
+        "zh-Hant": "雞蛋",
+        "en": "Egg",
+        "ja": "卵"
+      },
+      "stats": {
+        "unlockLevel": 1,
+        "defaultSellPrice": 5,
+        "maxSellPrice": 18,
+        "produceStats": {
+            "productionTime": 600,
+            "experience": 2
+        }
+      }
+    },
+    {
+      "id": "milk",
+      "imageUrl": "/images/shared/game/produces/milk_icon.png",
+      "names": {
+        "zh-Hant": "牛奶",
+        "en": "Milk",
+        "ja": "牛乳"
+      },
+      "stats": {
+        "unlockLevel": 6,
+        "defaultSellPrice": 10,
+        "maxSellPrice": 36,
+        "produceStats": {
+            "productionTime": 1500,
+            "experience": 3
+        }
+      }
+    },
+    {
+      "id": "pork",
+      "imageUrl": "/images/shared/game/produces/pork_icon.png",
+      "names": {
+        "zh-Hant": "豬肉",
+        "en": "Pork",
+        "ja": "豚肉"
+      },
+      "stats": {
+        "unlockLevel": 9,
+        "defaultSellPrice": 13,
+        "maxSellPrice": 46,
+        "produceStats": {
+            "productionTime": 9000,
+            "experience": 4
+        }
+      }
+    },
+    {
+      "id": "wool",
+      "imageUrl": "/images/shared/game/produces/wool_icon.png",
+      "names": {
+        "zh-Hant": "羊毛",
+        "en": "Wool",
+        "ja": "羊毛"
+      },
+      "stats": {
+        "unlockLevel": 60,
+        "defaultSellPrice": 18,
+        "maxSellPrice": 64,
+        "produceStats": {
+            "productionTime": 16200,
+            "experience": 5
+        }
+      }
+    }
+  ]
+}
