@@ -123,8 +123,15 @@ export default function ShopSlot({ href, icon, title, subtitle, productionTime }
       {tooltipVisible && typeof document !== 'undefined'
         ? createPortal(
             <div
-                      style={{ left: pos.left, top: pos.top - 8 }}
-                      className="absolute z-50 w-80 max-w-[20rem] -translate-x-1/2 -translate-y-full pointer-events-auto"
+                      style={{
+                        left: (typeof window !== 'undefined'
+                          ? Math.min(pos.left + 16, window.scrollX + document.documentElement.clientWidth - 16 - 320)
+                          : pos.left),
+                        top: (typeof window !== 'undefined'
+                          ? Math.max(window.scrollY + 8, pos.top - 24)
+                          : pos.top),
+                      }}
+                      className="absolute z-50 w-80 max-w-[20rem] pointer-events-auto"
                     >
                       <div
                         className="rounded-t border border-line border-b-0 bg-[rgba(240,240,240,0.98)] px-3 py-2 text-center text-lg"
