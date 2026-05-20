@@ -7,6 +7,7 @@
   "nav": {
     "home": "首頁",
     "tips": "Tips",
+    "products": "產品",
     "resources": "Resources",
     "crops": "農作物"
   },
@@ -34,9 +35,17 @@
   },
   "features": {
     "tips": {"title":"實戰 Tips","description":"建立每日循環、資源優先順序與常見失誤修正。"},
+    "products": {"title":"產品資料","description":"依商店分類整理所有可製作的產品與對應圖示。"},
     "resources": {"title":"資源索引","description":"收錄官方網站、社群與圖片來源，方便回查。"},
     "crops": {"title":"農作物資料","description":"整理所有農作物的語言名稱、生長時間與販售數據。"},
     "visuals": {"title":"品牌視覺","description":"以官方 LINE FRIENDS 視覺素材構成首頁圖像區塊。"}
+  },
+  "products": {
+    "intro": {
+      "eyebrow": "資料",
+      "title": "依商店分類的產品",
+      "description": "下面依商店整理所有可製作的產品，沿用站內相同的商店視覺樣式。"
+    }
   },
   "crops": {
     "columns": {

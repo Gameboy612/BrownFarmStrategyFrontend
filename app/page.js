@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { PageFrame, SectionTitle } from '../components/PageFrame';
 import { site } from '../data/site';
 import Slideshow from '../components/Slideshow.client';
-import ShopSlot from '../components/ShopSlot';
-import ShopHeader from '../components/ShopHeader';
+import ShopSlot from '../components/shop/ShopSlot';
+import ShopHeader from '../components/shop/ShopHeader';
 import { useLocale } from '../components/IntlProvider.client';
 
 export default function HomePage() {

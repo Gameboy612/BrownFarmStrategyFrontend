@@ -7,6 +7,7 @@
   "nav": {
     "home": "Home",
     "tips": "Tips",
+    "products": "Products",
     "resources": "Resources",
     "crops": "Crops"
   },
@@ -34,9 +35,17 @@
   },
   "features": {
     "tips": {"title":"Practical Tips","description":"Daily routines, prioritization and common fixes."},
+    "products": {"title":"Product Data","description":"Grouped by shop, with icons for every craftable product."},
     "resources": {"title":"Resource Index","description":"Official sites, communities and image credits."},
     "crops": {"title":"Crop Data","description":"A localized crop table with growth time, pricing and unlock stats."},
     "visuals": {"title":"Brand Visuals","description":"Official LINE FRIENDS visuals on the homepage."}
+  },
+  "products": {
+    "intro": {
+      "eyebrow": "Data",
+      "title": "Products by Shop",
+      "description": "Below are the craftable products grouped by the shop that makes them, using the same shop art style as the rest of the site."
+    }
   },
   "crops": {
     "columns": {

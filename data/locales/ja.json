@@ -7,6 +7,7 @@
   "nav": {
     "home": "ホーム",
     "tips": "ヒント",
+    "products": "商品",
     "resources": "リソース",
     "crops": "農作物"
   },
@@ -34,9 +35,17 @@
   },
   "features": {
     "tips": {"title":"実践的なヒント","description":"日課、優先順位、よくある修正。"},
+    "products": {"title":"商品データ","description":"ショップごとに整理した、製作可能な商品の一覧です。"},
     "resources": {"title":"リソース一覧","description":"公式サイト、コミュニティ、画像クレジット。"},
     "crops": {"title":"農作物データ","description":"成長時間、売値、解放レベルをまとめた一覧です。"},
     "visuals": {"title":"ブランドビジュアル","description":"公式ビジュアルをホームに配置。"}
+  },
+  "products": {
+    "intro": {
+      "eyebrow": "データ",
+      "title": "ショップ別の商品",
+      "description": "各ショップで製作できる商品を、サイト全体と同じショップビジュアルで整理しています。"
+    }
   },
   "crops": {
     "columns": {
