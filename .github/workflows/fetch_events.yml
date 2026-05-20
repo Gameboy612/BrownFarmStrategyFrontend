@@ -1,4 +1,4 @@
-name: Fetch X Events
+name: Fetch Events
 
 on:
   schedule:
