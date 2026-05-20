@@ -125,7 +125,7 @@ export default function ShopSlot({ href, icon, title, subtitle, productionTime }
             <div
                       style={{
                         left: (typeof window !== 'undefined'
-                          ? Math.min(pos.left + 16, window.scrollX + document.documentElement.clientWidth - 16 - 320)
+                          ? Math.min(pos.left + 48, window.scrollX + document.documentElement.clientWidth - 48 - 320)
                           : pos.left),
                         top: (typeof window !== 'undefined'
                           ? Math.max(window.scrollY + 8, pos.top - 24)
