@@ -47,11 +47,23 @@ export default function ProductsPage() {
           {shops.map((shop) => (
             <Shop key={shop.id} title={shop.names[localeName]} icon={shop.imageUrl}>
               <div className="flex gap-4">
-                {shop.products.map((product) => (
-                  <div key={product.id} className="w-[9rem] shrink-0 sm:w-[10rem] md:w-[13rem]">
-                    <ShopSlot icon={product.imageUrl} title={product.names[localeName]} />
-                  </div>
-                ))}
+                {shop.products.map((product) => {
+                  // find recipe for this product to get productionTime
+                  const recipe = shop.recipes.find((r) => r.id === `products/${product.id}`);
+                  const productionTime = recipe?.stats?.productionTime ?? null;
+
+                  return (
+                    <div key={product.id} className="w-[9rem] shrink-0 sm:w-[12rem] md:w-[13rem]">
+                      <ShopSlot
+                        href={`/products/${product.id}`}
+                        icon={product.imageUrl}
+                        title={product.names[localeName]}
+                        subtitle={shop.names[localeName]}
+                        productionTime={productionTime}
+                      />
+                    </div>
+                  );
+                })}
               </div>
             </Shop>
           ))}

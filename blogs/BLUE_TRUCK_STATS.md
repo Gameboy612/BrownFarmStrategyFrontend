@@ -19,7 +19,7 @@ Bacon Crepe: 4
 
 Cake:
 Level 1:
-Fresh Cream Cake: 3
+Fresh Cream Cake: 2
 
 Level 5:
 Fresh Cream Cake: 3
