@@ -28,7 +28,7 @@ function SlotContent({ icon, title }) {
   );
 }
 
-export default function ShopSlot({ href, icon, title, subtitle, productionTime }) {
+export default function ShopSlot({ href, icon, title, subtitle, productionTime, tooltipEnabled = false }) {
   const router = useRouter();
   const [tooltipVisible, setTooltipVisible] = useState(false);
   const hideTimer = useRef();
@@ -43,6 +43,7 @@ export default function ShopSlot({ href, icon, title, subtitle, productionTime }
   }, []);
 
   function showTooltip() {
+    if (!tooltipEnabled) return;
     clearTimeout(hideTimer.current);
     // compute position
     const el = containerRef.current;
@@ -71,6 +72,7 @@ export default function ShopSlot({ href, icon, title, subtitle, productionTime }
   }
 
   function hideTooltipSoon() {
+    if (!tooltipEnabled) return;
     clearTimeout(hideTimer.current);
     hideTimer.current = setTimeout(() => setTooltipVisible(false), 2200);
   }
@@ -79,6 +81,10 @@ export default function ShopSlot({ href, icon, title, subtitle, productionTime }
     if (!href) return;
     const pointer = lastPointerType.current;
     const isTouchEvent = pointer === 'touch';
+    if (!tooltipEnabled) {
+      router.push(href);
+      return;
+    }
 
     if (isTouchEvent) {
       if (tooltipVisible) {
@@ -101,12 +107,12 @@ export default function ShopSlot({ href, icon, title, subtitle, productionTime }
       className="relative group inline-block text-center focus:outline-none cursor-pointer"
       onPointerEnter={(e) => {
         lastPointerType.current = e.pointerType;
-        if (e.pointerType !== 'touch') showTooltip();
+        if (tooltipEnabled && e.pointerType !== 'touch') showTooltip();
       }}
       onPointerMove={handlePointerMove}
       onPointerLeave={(e) => {
         lastPointerType.current = e.pointerType;
-        if (e.pointerType !== 'touch') setTooltipVisible(false);
+        if (tooltipEnabled && e.pointerType !== 'touch') setTooltipVisible(false);
       }}
       onPointerDown={(e) => {
         lastPointerType.current = e.pointerType;
@@ -120,7 +126,7 @@ export default function ShopSlot({ href, icon, title, subtitle, productionTime }
     >
       <SlotContent icon={icon} title={title} />
 
-      {tooltipVisible && typeof document !== 'undefined'
+      {tooltipEnabled && tooltipVisible && typeof document !== 'undefined'
         ? createPortal(
             <div
                       style={{

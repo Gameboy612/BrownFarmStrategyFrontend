@@ -224,7 +224,7 @@ export const site = {
   ],
   homeSlots: [
     { href: '/crops', title: '農作物', icon: '/images/shared/game/crops/wheat_icon.png' },
-    { href: '/resources', title: '店鋪', icon: '/images/shared/app_logo.png' },
+    { href: '/products', title: '產品', icon: '/images/shared/game/products/cheese_icon.png' },
     { href: '/#gallery', title: '熊大夥伴', icon: '/images/shared/placeholder_logo.svg' },
     { href: '/tips', title: '情報', icon: '/images/shared/item-placeholder-duck.svg' },
     { href: '/tips', title: '攻略', icon: '/images/shared/placeholder_logo.svg' },

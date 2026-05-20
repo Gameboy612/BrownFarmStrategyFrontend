@@ -33,7 +33,7 @@ export default function HomePage() {
             <ShopHeader title="物資" />
             <div className="mt-4 grid gap-4 sm:gap-6 md:gap-8 grid-cols-2 sm:grid-cols-3 sm:mx-[5%] md:mx-[10%] lg:mx-[15%]">
               {site.homeSlots.map((slot) => (
-                <ShopSlot key={slot.title} href={slot.href} icon={slot.icon} title={slot.title} />
+                <ShopSlot key={slot.title} href={slot.href} icon={slot.icon} title={slot.title} tooltipEnabled={false} />
               ))}
             </div>
           </div>

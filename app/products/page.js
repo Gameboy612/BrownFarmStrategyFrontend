@@ -60,6 +60,7 @@ export default function ProductsPage() {
                         title={product.names[localeName]}
                         subtitle={shop.names[localeName]}
                         productionTime={productionTime}
+                        tooltipEnabled={true}
                       />
                     </div>
                   );
