@@ -1,0 +1,54 @@
+{
+  "site": {
+    "name": "Brown Farm Strategy Wiki",
+    "subtitle": "LINE Brown Farm Strategy Wiki",
+    "description": "Organized overview, tips and resources for LINE Brown Farm."
+  },
+  "nav": {
+    "home": "Home",
+    "tips": "Tips",
+    "resources": "Resources",
+    "crops": "Crops"
+  },
+  "hero": {
+    "highlights": [
+      "Single theme file controls site styling.",
+      "Traditional Chinese content with English and Japanese support.",
+      "Uses official LINE FRIENDS visuals as image sources."
+    ]
+  },
+  "home": {
+    "events": {
+      "eyebrow": "Current",
+      "title": "Ongoing events",
+      "description": "Check the live event board first, then decide what to prioritize in your session.",
+      "live": "Live now",
+      "ended": "Ended"
+    }
+  },
+  "stats": {
+    "pages": "Pages",
+    "theme": "Theme",
+    "deploy": "Deploy",
+    "images": "Images"
+  },
+  "features": {
+    "tips": {"title":"Practical Tips","description":"Daily routines, prioritization and common fixes."},
+    "resources": {"title":"Resource Index","description":"Official sites, communities and image credits."},
+    "crops": {"title":"Crop Data","description":"A localized crop table with growth time, pricing and unlock stats."},
+    "visuals": {"title":"Brand Visuals","description":"Official LINE FRIENDS visuals on the homepage."}
+  },
+  "crops": {
+    "columns": {
+      "icon": "Icon",
+      "name": "Name",
+      "unlockLevel": "Unlock Lv.",
+      "growthTime": "Growth Time",
+      "defaultSell": "Default Price",
+      "maxSell": "Max Price",
+      "xp": "XP"
+    }
+  },
+  "footer": {"note":"Static site generated for GitHub Pages deployment."},
+  "localeNames": {"en":"English","zh-Hant":"中文(繁體)","ja":"日本語"}
+}

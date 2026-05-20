@@ -1,0 +1,54 @@
+{
+  "site": {
+    "name": "Brown Farm 戦略ウィキ",
+    "subtitle": "LINE Brown Farm Strategy Wiki",
+    "description": "LINE Brown Farm の概要、ヒント、リソースを整理しています。"
+  },
+  "nav": {
+    "home": "ホーム",
+    "tips": "ヒント",
+    "resources": "リソース",
+    "crops": "農作物"
+  },
+  "hero": {
+    "highlights": [
+      "単一のテーマファイルでサイトのスタイルを管理します。",
+      "繁体字中国語、英語、日本語に対応。",
+      "公式の LINE FRIENDS ビジュアルを画像ソースとして使用しています。"
+    ]
+  },
+  "home": {
+    "events": {
+      "eyebrow": "現在",
+      "title": "開催中のイベント",
+      "description": "まずはホームのイベント一覧を確認して、今の優先度を決めましょう。",
+      "live": "進行中",
+      "ended": "終了"
+    }
+  },
+  "stats": {
+    "pages": "ページ",
+    "theme": "テーマ",
+    "deploy": "デプロイ",
+    "images": "画像"
+  },
+  "features": {
+    "tips": {"title":"実践的なヒント","description":"日課、優先順位、よくある修正。"},
+    "resources": {"title":"リソース一覧","description":"公式サイト、コミュニティ、画像クレジット。"},
+    "crops": {"title":"農作物データ","description":"成長時間、売値、解放レベルをまとめた一覧です。"},
+    "visuals": {"title":"ブランドビジュアル","description":"公式ビジュアルをホームに配置。"}
+  },
+  "crops": {
+    "columns": {
+      "icon": "アイコン",
+      "name": "名前",
+      "unlockLevel": "解放レベル",
+      "growthTime": "成長時間",
+      "defaultSell": "通常売値",
+      "maxSell": "最高売値",
+      "xp": "経験値"
+    }
+  },
+  "footer": {"note":"GitHub Pages 用に生成された静的サイトです。"},
+  "localeNames": {"en":"English","zh-Hant":"中文(繁體)","ja":"日本語"}
+}

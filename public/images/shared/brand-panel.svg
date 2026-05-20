@@ -1,0 +1,18 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#FBFCFC"/>
+  <rect x="40" y="40" width="1120" height="820" stroke="#060908" stroke-width="4"/>
+  <rect x="92" y="92" width="496" height="716" fill="#F4F0E7" stroke="#CEAF6D" stroke-width="4"/>
+  <rect x="656" y="92" width="452" height="332" fill="#FBFCFC" stroke="#B4A397" stroke-width="4"/>
+  <rect x="656" y="476" width="452" height="332" fill="#FBFCFC" stroke="#D3B989" stroke-width="4"/>
+  <circle cx="258" cy="272" r="96" fill="#CEAF6D"/>
+  <circle cx="346" cy="272" r="96" fill="#D3B989" opacity="0.75"/>
+  <path d="M190 560H462" stroke="#060908" stroke-width="6"/>
+  <path d="M190 620H388" stroke="#B4A397" stroke-width="6"/>
+  <path d="M190 680H430" stroke="#CEAF6D" stroke-width="6"/>
+  <path d="M720 170H1044" stroke="#060908" stroke-width="6"/>
+  <path d="M720 234H980" stroke="#B4A397" stroke-width="6"/>
+  <path d="M720 554H1044" stroke="#060908" stroke-width="6"/>
+  <path d="M720 618H976" stroke="#D3B989" stroke-width="6"/>
+  <text x="720" y="352" fill="#060908" font-family="Georgia, serif" font-size="56" letter-spacing="4">BROWN FARM</text>
+  <text x="720" y="412" fill="#B4A397" font-family="Arial, sans-serif" font-size="24" letter-spacing="6">STRATEGY WIKI</text>
+</svg>

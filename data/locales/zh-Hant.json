@@ -1,0 +1,54 @@
+{
+  "site": {
+    "name": "Brown Farm 戰術百科",
+    "subtitle": "LINE Brown Farm Strategy Wiki",
+    "description": "整理 LINE Brown Farm 的首頁總覽、實戰技巧與外部資源。"
+  },
+  "nav": {
+    "home": "首頁",
+    "tips": "Tips",
+    "resources": "Resources",
+    "crops": "農作物"
+  },
+  "hero": {
+    "highlights": [
+      "統一色系與版型，整站可由單一主題檔案快速調整。",
+      "Traditional Chinese 內容，並支援英文與日文切換。",
+      "使用官方 LINE FRIENDS 視覺素材作為圖像來源。"
+    ]
+  },
+  "home": {
+    "events": {
+      "eyebrow": "目前",
+      "title": "進行中的活動",
+      "description": "先看首頁的活動看板，再決定這一輪要優先處理什麼。",
+      "live": "進行中",
+      "ended": "已結束"
+    }
+  },
+  "stats": {
+    "pages": "頁面",
+    "theme": "主題",
+    "deploy": "部署",
+    "images": "圖片來源"
+  },
+  "features": {
+    "tips": {"title":"實戰 Tips","description":"建立每日循環、資源優先順序與常見失誤修正。"},
+    "resources": {"title":"資源索引","description":"收錄官方網站、社群與圖片來源，方便回查。"},
+    "crops": {"title":"農作物資料","description":"整理所有農作物的語言名稱、生長時間與販售數據。"},
+    "visuals": {"title":"品牌視覺","description":"以官方 LINE FRIENDS 視覺素材構成首頁圖像區塊。"}
+  },
+  "crops": {
+    "columns": {
+      "icon": "圖示",
+      "name": "名稱",
+      "unlockLevel": "解鎖等級",
+      "growthTime": "生長時間",
+      "defaultSell": "預設售價",
+      "maxSell": "最高售價",
+      "xp": "經驗值"
+    }
+  },
+  "footer": {"note":"靜態站點已按 GitHub Pages 風格設計，可直接輸出為純前端頁面。"},
+  "localeNames": {"en":"English","zh-Hant":"中文(繁體)","ja":"日本語"}
+}

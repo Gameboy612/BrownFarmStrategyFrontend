@@ -1,0 +1,7 @@
+# local python cache
+__pycache__/
+*.py[cod]
+\.env
+.next/
+.venv/
+node_modules/

@@ -1,0 +1,198 @@
+{
+  "sourceUrl": "https://brownfarminfo.blogspot.com/p/brownfarmwiki.html#crop",
+  "updatedFrom": "BrownFarm wiki crop section",
+  "items": [
+    {
+      "id": "wheat",
+      "imageUrl": "/images/shared/game/crops/wheat_icon.png",
+      "names": {
+        "zh-Hant": "小麥",
+        "en": "Wheat",
+        "ja": "小麦"
+      },
+      "stats": {
+        "unlockLevel": 1,
+        "growthTime": 60,
+        "experience": 1,
+        "defaultSellPrice": 1,
+        "maxSellPrice": 3.6
+      }
+    },
+    {
+      "id": "corn",
+      "imageUrl": "/images/shared/game/crops/corn_icon.png",
+      "names": {
+        "zh-Hant": "玉米",
+        "en": "Corn",
+        "ja": "とうもるこし"
+      },
+      "stats": {
+        "unlockLevel": 2,
+        "growthTime": 180,
+        "experience": 1,
+        "defaultSellPrice": 2,
+        "maxSellPrice": 7.2
+      }
+    },
+    {
+      "id": "soybean",
+      "imageUrl": "/images/shared/game/crops/soybean_icon.png",
+      "names": {
+        "zh-Hant": "黃豆",
+        "en": "Soybean",
+        "ja": "豆"
+      },
+      "stats": {
+        "unlockLevel": 4,
+        "growthTime": 600,
+        "experience": 1,
+        "defaultSellPrice": 3,
+        "maxSellPrice": 10.8
+      }
+    },
+    {
+      "id": "sugar-beet",
+      "imageUrl": "/images/shared/game/crops/sugar_beet_icon.png",
+      "names": {
+        "zh-Hant": "甜菜根",
+        "en": "Sugar Beet",
+        "ja": "テンサイ"
+      },
+      "stats": {
+        "unlockLevel": 8,
+        "growthTime": 1200,
+        "experience": 2,
+        "defaultSellPrice": 5,
+        "maxSellPrice": 18.0
+      }
+    },
+    {
+      "id": "carrot",
+      "imageUrl": "/images/shared/game/crops/carrot_icon.png",
+      "names": {
+        "zh-Hant": "胡蘿蔔",
+        "en": "Carrot",
+        "ja": "にんじん"
+      },
+      "stats": {
+        "unlockLevel": 9,
+        "growthTime": 1200,
+        "experience": 2,
+        "defaultSellPrice": 4,
+        "maxSellPrice": 14.4
+      }
+    },
+    {
+      "id": "potato",
+      "imageUrl": "/images/shared/game/crops/potato_icon.png",
+      "names": {
+        "zh-Hant": "馬鈴薯",
+        "en": "Potato",
+        "ja": "ジャガイモ"
+      },
+      "stats": {
+        "unlockLevel": "待確認",
+        "growthTime": 5400,
+        "experience": 5,
+        "defaultSellPrice": 10,
+        "maxSellPrice": 36.0
+      }
+    },
+    {
+      "id": "chili-pepper",
+      "imageUrl": "/images/shared/game/crops/hot_pepper_icon.png",
+      "names": {
+        "zh-Hant": "辣椒",
+        "en": "Chili Pepper",
+        "ja": "トウガラツ"
+      },
+      "stats": {
+        "unlockLevel": "待確認",
+        "growthTime": 7200,
+        "experience": 4,
+        "defaultSellPrice": 7,
+        "maxSellPrice": 25.2
+      }
+    },
+    {
+      "id": "rice",
+      "imageUrl": "/images/shared/game/crops/rice_icon.png",
+      "names": {
+        "zh-Hant": "稻米",
+        "en": "Rice",
+        "ja": "米"
+      },
+      "stats": {
+        "unlockLevel": 25,
+        "growthTime": 180,
+        "experience": 1,
+        "defaultSellPrice": 2,
+        "maxSellPrice": 7.2
+      }
+    },
+    {
+      "id": "strawberry",
+      "imageUrl": "/images/shared/game/crops/strawberry_icon.png",
+      "names": {
+        "zh-Hant": "草莓",
+        "en": "Strawberry",
+        "ja": "イチゴ"
+      },
+      "stats": {
+        "unlockLevel": 28,
+        "growthTime": 21600,
+        "experience": 6,
+        "defaultSellPrice": 12,
+        "maxSellPrice": 43.2
+      }
+    },
+    {
+      "id": "cabbage",
+      "imageUrl": "/images/shared/game/crops/cabbage_icon.png",
+      "names": {
+        "zh-Hant": "高麗菜",
+        "en": "Cabbage",
+        "ja": "キャベツ"
+      },
+      "stats": {
+        "unlockLevel": 32,
+        "growthTime": 5400,
+        "experience": 4,
+        "defaultSellPrice": 9,
+        "maxSellPrice": 32.4
+      }
+    },
+    {
+      "id": "tomato",
+      "imageUrl": "/images/shared/game/crops/tomato_icon.png",
+      "names": {
+        "zh-Hant": "蕃茄",
+        "en": "Tomato",
+        "ja": "トマト"
+      },
+      "stats": {
+        "unlockLevel": 34,
+        "growthTime": 28800,
+        "experience": 7,
+        "defaultSellPrice": 14,
+        "maxSellPrice": 50.4
+      }
+    },
+    {
+      "id": "red-bean",
+      "imageUrl": "/images/shared/game/crops/red_bean_icon.png",
+      "names": {
+        "zh-Hant": "紅豆",
+        "en": "Red Bean",
+        "ja": "小豆"
+      },
+      "stats": {
+        "unlockLevel": 41,
+        "growthTime": 2700,
+        "experience": "待確認",
+        "defaultSellPrice": 8,
+        "maxSellPrice": 28.8
+      }
+    }
+  ]
+}

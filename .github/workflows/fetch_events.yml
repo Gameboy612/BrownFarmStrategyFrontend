@@ -1,0 +1,37 @@
+name: Fetch X Events
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # daily at 00:00 UTC
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: python -m pip install -r event_fetcher/requirements.txt
+
+      - name: Install Chromium
+        run: python -m playwright install chromium
+
+      - name: Fetch LINE GAME blog category
+        run: |
+          python event_fetcher/fetch_events.py --output data/events --limit 10
+
+      - name: Commit data if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/events public/images/events
+          git diff --staged --quiet || (git commit -m "chore: update X events" && git push)
