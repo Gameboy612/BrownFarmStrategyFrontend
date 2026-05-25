@@ -24,7 +24,17 @@
       "title": "開催中のイベント",
       "description": "まずはホームのイベント一覧を確認して、今の優先度を決めましょう。",
       "live": "進行中",
-      "ended": "終了"
+      "ended": "終了",
+      "daysLeft": "残り{count}日",
+      "startsIn": "あと{count}日で開始",
+      "daysLeftCompact": "残り{duration}",
+      "startsInCompact": "あと{duration}で開始",
+      "unit": {
+        "day": "日",
+        "hour": "時間",
+        "minute": "分",
+        "second": "秒"
+      }
     }
   },
   "stats": {

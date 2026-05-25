@@ -24,7 +24,17 @@
       "title": "Ongoing events",
       "description": "Check the live event board first, then decide what to prioritize in your session.",
       "live": "Live now",
-      "ended": "Ended"
+      "ended": "Ended",
+      "daysLeft": "{count} days left",
+      "startsIn": "Starts in {count} days",
+      "daysLeftCompact": "{duration} left",
+      "startsInCompact": "Starts in {duration}",
+      "unit": {
+        "day": "d",
+        "hour": "h",
+        "minute": "m",
+        "second": "s"
+      }
     }
   },
   "stats": {

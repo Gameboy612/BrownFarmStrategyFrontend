@@ -24,7 +24,17 @@
       "title": "進行中的活動",
       "description": "先看首頁的活動看板，再決定這一輪要優先處理什麼。",
       "live": "進行中",
-      "ended": "已結束"
+      "ended": "已結束",
+      "daysLeft": "剩下 {count} 天",
+      "startsIn": "{count} 天後開始",
+      "daysLeftCompact": "{duration} 後完結",
+      "startsInCompact": "{duration} 後開始",
+      "unit": {
+        "day": "天",
+        "hour": "時",
+        "minute": "分",
+        "second": "秒"
+      }
     }
   },
   "stats": {

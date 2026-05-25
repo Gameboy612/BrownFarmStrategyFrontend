@@ -21,6 +21,14 @@ function resolve(obj, key) {
   return key.split('.').reduce((s, p) => (s && s[p] !== undefined ? s[p] : undefined), obj);
 }
 
+function interpolate(template, params = {}) {
+  if (typeof template !== 'string') return template;
+  return template.replace(/\{(\w+)\}/g, (match, key) => {
+    if (params[key] === undefined || params[key] === null) return match;
+    return String(params[key]);
+  });
+}
+
 export default function IntlProvider({ children }) {
   const [locale, setLocaleState] = useState('zh-Hant');
 
@@ -45,9 +53,9 @@ export default function IntlProvider({ children }) {
           setLocaleState(l);
         }
       },
-      t: (key) => {
+      t: (key, params) => {
         const v = resolve(messages, key);
-        return v !== undefined ? v : key;
+        return v !== undefined ? interpolate(v, params) : key;
       },
       localeNames: LOCALES['zh-Hant'].localeNames,
     };
