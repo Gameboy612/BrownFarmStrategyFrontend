@@ -211,6 +211,670 @@
         "defaultSellPrice": 22,
         "maxSellPrice": 79
       }
-    }
+    },
+    {
+      "id": "egg-toast",
+      "imageUrl": "/images/shared/game/products/egg_toast_icon.png",
+      "names": {
+        "zh-Hant": "蛋吐司",
+        "en": "Egg Toast",
+        "ja": "エッグトースト"
+      },
+      "stats": {
+        "unlockLevel": 9,
+        "defaultSellPrice": 17,
+        "maxSellPrice": 61
+      }
+    },
+    {
+      "id": "hot-dog",
+      "imageUrl": "/images/shared/game/products/hot_dog_icon.png",
+      "names": {
+        "zh-Hant": "熱狗",
+        "en": "Hot Dog",
+        "ja": "ホットドッグ"
+      },
+      "stats": {
+        "unlockLevel": 10,
+        "defaultSellPrice": 24,
+        "maxSellPrice": 86
+      }
+    },
+    {
+      "id": "popcorn",
+      "imageUrl": "/images/shared/game/products/popcorn_icon.png",
+      "names": {
+        "zh-Hant": "爆米花",
+        "en": "Popcorn",
+        "ja": "ポップコーン"
+      },
+      "stats": {
+        "unlockLevel": 12,
+        "defaultSellPrice": 11,
+        "maxSellPrice": 39
+      }
+    },
+    {
+      "id": "ham-egg-sandwich",
+      "imageUrl": "/images/shared/game/products/ham_egg_sandwitch_icon.png",
+      "names": {
+        "zh-Hant": "火腿蛋三明治",
+        "en": "Ham Egg Sandwich",
+        "ja": "ハムエッグサンド"
+      },
+      "stats": {
+        "unlockLevel": 22,
+        "defaultSellPrice": 51,
+        "maxSellPrice": 183
+      }
+    },
+    {
+      "id": "crepe",
+      "imageUrl": "/images/shared/game/products/crepe_icon.png",
+      "names": {
+        "zh-Hant": "可麗餅",
+        "en": "Crepe",
+        "ja": "クレープ"
+      },
+      "stats": {
+        "unlockLevel": 14,
+        "defaultSellPrice": 26,
+        "maxSellPrice": 93
+      }
+    },
+    {
+      "id": "apple-cinnamon-crepe",
+      "imageUrl": "/images/shared/game/products/cinnamon_crepe_icon.png",
+      "names": {
+        "zh-Hant": "蘋果肉桂可麗餅",
+        "en": "Apple Cinnamon Crepe",
+        "ja": "アップルシナモンクレープ"
+      },
+      "stats": {
+        "unlockLevel": 15,
+        "defaultSellPrice": 32,
+        "maxSellPrice": 115
+      }
+    },
+    {
+      "id": "bacon-crepe",
+      "imageUrl": "/images/shared/game/products/bacon_crepe_icon.png",
+      "names": {
+        "zh-Hant": "培根可麗餅",
+        "en": "Bacon Crepe",
+        "ja": "ベーコンクレープ"
+      },
+      "stats": {
+        "unlockLevel": 17,
+        "defaultSellPrice": 56,
+        "maxSellPrice": 201
+      }
+    },
+    {
+      "id": "chocolate-crepe",
+      "imageUrl": "/images/shared/game/products/cream_chocolate_crepe_icon.png",
+      "names": {
+        "zh-Hant": "巧克力可麗餅",
+        "en": "Chocolate Crepe",
+        "ja": "チョコクレープ"
+      },
+      "stats": {
+        "unlockLevel": 28,
+        "defaultSellPrice": 73,
+        "maxSellPrice": 262
+      }
+    },
+    {
+      "id": "strawberry-crepe",
+      "imageUrl": "/images/shared/game/products/cream_strawberry_crepe_icon.png",
+      "names": {
+        "zh-Hant": "草莓可麗餅",
+        "en": "Strawberry Crepe",
+        "ja": "イチゴクレープ"
+      },
+      "stats": {
+        "unlockLevel": 36,
+        "defaultSellPrice": 56,
+        "maxSellPrice": 0
+      }
+    },
+    {
+      "id": "strawberry-icecream-crepe",
+      "imageUrl": "/images/shared/game/products/cream_strawberry_icecream_crepe_icon.png",
+      "names": {
+        "zh-Hant": "草莓冰淇淋可麗餅",
+        "en": "Strawberry Ice Cream Crepe",
+        "ja": "ストロベリーアイスクリームクレープ"
+      },
+      "stats": {
+        "unlockLevel": 39,
+        "defaultSellPrice": 106,
+        "maxSellPrice": 381
+      }
+    },
+    {
+      "id": "burger",
+      "imageUrl": "/images/shared/game/products/burger-burger.png",
+      "names": {
+        "zh-Hant": "漢堡",
+        "en": "Burger",
+        "ja": "ハンバーガー"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 42,
+        "maxSellPrice": 151
+      }
+    },
+    {
+      "id": "fries",
+      "imageUrl": "/images/shared/game/products/french_fries_icon.png",
+      "names": {
+        "zh-Hant": "薯條",
+        "en": "Fries",
+        "ja": "フライドポテト"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 22,
+        "maxSellPrice": 79
+      }
+    },
+    {
+      "id": "spicy-cheese-burger",
+      "imageUrl": "/images/shared/game/products/spicy_cheese_burger_icon.png",
+      "names": {
+        "zh-Hant": "辣起士漢堡",
+        "en": "Spicy Cheese Burger",
+        "ja": "スパイシーチーズバーガー"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 78,
+        "maxSellPrice": 280
+      }
+    },
+    {
+      "id": "apple-pie",
+      "imageUrl": "/images/shared/game/products/apple_pie_icon.png",
+      "names": {
+        "zh-Hant": "蘋果派",
+        "en": "Apple Pie",
+        "ja": "アップルパイ"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 36,
+        "maxSellPrice": 129
+      }
+    },
+    {
+      "id": "espresso",
+      "imageUrl": "/images/shared/game/products/espresso_icon.png",
+      "names": {
+        "zh-Hant": "濃縮咖啡",
+        "en": "Espresso",
+        "ja": "エスプレッソ"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 32,
+        "maxSellPrice": 115
+      }
+    },
+    {
+      "id": "latte",
+      "imageUrl": "/images/shared/game/products/latte_icon.png",
+      "names": {
+        "zh-Hant": "拿鐵咖啡",
+        "en": "Latte",
+        "ja": "カフェラテ"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 46,
+        "maxSellPrice": 165
+      }
+    },
+    {
+      "id": "hot-chocolate",
+      "imageUrl": "/images/shared/game/products/hot_chocolate_icon.png",
+      "names": {
+        "zh-Hant": "熱可可",
+        "en": "Hot Chocolate",
+        "ja": "ホットチョコレート"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 68,
+        "maxSellPrice": 244
+      }
+    },
+    {
+      "id": "vienna-coffee",
+      "imageUrl": "/images/shared/game/products/vienna_coffee_icon.png",
+      "names": {
+        "zh-Hant": "維也納咖啡",
+        "en": "Vienna Coffee",
+        "ja": "ウィンナーコーヒー"
+      },
+      "stats": {
+        "unlockLevel": 31,
+        "defaultSellPrice": 61,
+        "maxSellPrice": 219
+      }
+    },
+    {
+      "id": "affogato",
+      "imageUrl": "/images/shared/game/products/affogato_icon.png",
+      "names": {
+        "zh-Hant": "阿法奇朵",
+        "en": "Affogato",
+        "ja": "アフォガート"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 83,
+        "maxSellPrice": 298
+      }
+    },
+    {
+      "id": "normal-bait",
+      "imageUrl": "/images/shared/game/products/normal_bait_icon.png",
+      "names": {
+        "zh-Hant": "一般魚餌",
+        "en": "Normal Bait",
+        "ja": "ふつうの釣りエサ"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 17,
+        "maxSellPrice": 61
+      }
+    },
+    {
+      "id": "fine-bait",
+      "imageUrl": "/images/shared/game/products/fine_bait_icon.png",
+      "names": {
+        "zh-Hant": "上等魚餌",
+        "en": "Fine Bait",
+        "ja": "よく釣れる釣りエサ"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 35,
+        "maxSellPrice": 126
+      }
+    },
+    {
+      "id": "highend-bait",
+      "imageUrl": "/images/shared/game/products/highend_bait_icon.png",
+      "names": {
+        "zh-Hant": "極品魚餌",
+        "en": "High-end Bait",
+        "ja": "リッチな釣りエサ"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 48,
+        "maxSellPrice": 172
+      }
+    },
+    {
+      "id": "shrimp",
+      "imageUrl": "/images/shared/game/products/shrimp_icon.png",
+      "names": {
+        "zh-Hant": "蝦子",
+        "en": "Shrimp",
+        "ja": "エビ"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 39,
+        "maxSellPrice": 140
+      }
+    },
+    {
+      "id": "eel",
+      "imageUrl": "/images/shared/game/products/eel_icon.png",
+      "names": {
+        "zh-Hant": "鰻魚",
+        "en": "Eel",
+        "ja": "ウナギ"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 49,
+        "maxSellPrice": 176
+      }
+    },
+    {
+      "id": "salmon",
+      "imageUrl": "/images/shared/game/products/salmon_icon.png",
+      "names": {
+        "zh-Hant": "鮭魚",
+        "en": "Salmon",
+        "ja": "サーモン"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 62,
+        "maxSellPrice": 223
+      }
+    },
+    {
+      "id": "tuna",
+      "imageUrl": "/images/shared/game/products/tuna_icon.png",
+      "names": {
+        "zh-Hant": "鮪魚",
+        "en": "Tuna",
+        "ja": "マクロ"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 66,
+        "maxSellPrice": 237
+      }
+    },
+    {
+      "id": "apple-juice",
+      "imageUrl": "/images/shared/game/products/juicer-apple.png",
+      "names": {
+        "zh-Hant": "蘋果汁",
+        "en": "Apple Juice",
+        "ja": "りんごジュース"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 26,
+        "maxSellPrice": 93
+      }
+    },
+    {
+      "id": "strawberry-juice",
+      "imageUrl": "/images/shared/game/products/juicer-strawberry.png",
+      "names": {
+        "zh-Hant": "草莓汁",
+        "en": "Strawberry Juice",
+        "ja": "イチゴジュース"
+      },
+      "stats": {
+        "unlockLevel": 28,
+        "defaultSellPrice": 45,
+        "maxSellPrice": 162
+      }
+    },
+    {
+      "id": "carrot-juice",
+      "imageUrl": "/images/shared/game/products/juicer-carrot.png",
+      "names": {
+        "zh-Hant": "胡蘿蔔汁",
+        "en": "Carrot Juice",
+        "ja": "にんじんジュース"
+      },
+      "stats": {
+        "unlockLevel": 31,
+        "defaultSellPrice": 15,
+        "maxSellPrice": 54
+      }
+    },
+    {
+      "id": "tomato-juice",
+      "imageUrl": "/images/shared/game/products/juicer-tomato.png",
+      "names": {
+        "zh-Hant": "蕃茄汁",
+        "en": "Tomato Juice",
+        "ja": "トマトジュース"
+      },
+      "stats": {
+        "unlockLevel": 34,
+        "defaultSellPrice": 50,
+        "maxSellPrice": 180
+      }
+    },
+    {
+      "id": "grape-juice",
+      "imageUrl": "/images/shared/game/products/juicer-grape.png",
+      "names": {
+        "zh-Hant": "葡萄汁",
+        "en": "Grape Juice",
+        "ja": "ぶどうジュース"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 96,
+        "maxSellPrice": 345
+      }
+    },
+    {
+      "id": "fruit-juice",
+      "imageUrl": "/images/shared/game/products/juicer-fruit.png",
+      "names": {
+        "zh-Hant": "綜合果汁",
+        "en": "Fruit Juice",
+        "ja": "フルーツジュース"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 129,
+        "maxSellPrice": 0
+      }
+    },
+    {
+      "id": "soy-sauce",
+      "imageUrl": "/images/shared/game/products/sauce-tsuyu.png",
+      "names": {
+        "zh-Hant": "醬油",
+        "en": "Soy Sauce",
+        "ja": "醤油"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 12,
+        "maxSellPrice": 43
+      }
+    },
+    {
+      "id": "miso",
+      "imageUrl": "/images/shared/game/products/sauce-miso.png",
+      "names": {
+        "zh-Hant": "味噌",
+        "en": "Miso",
+        "ja": "味噌"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 15,
+        "maxSellPrice": 54
+      }
+    },
+    {
+      "id": "vanilla-ice-cream",
+      "imageUrl": "/images/shared/game/products/vanilla_ice_cream_icon.png",
+      "names": {
+        "zh-Hant": "香草冰淇淋",
+        "en": "Vanilla Ice Cream",
+        "ja": "バニラアイス"
+      },
+      "stats": {
+        "unlockLevel": 29,
+        "defaultSellPrice": 46,
+        "maxSellPrice": 165
+      }
+    },
+    {
+      "id": "chocolate-ice-cream",
+      "imageUrl": "/images/shared/game/products/chocolate_icecream_icon.png",
+      "names": {
+        "zh-Hant": "巧克力冰淇淋",
+        "en": "Chocolate Ice Cream",
+        "ja": "チョコアイス"
+      },
+      "stats": {
+        "unlockLevel": 33,
+        "defaultSellPrice": 81,
+        "maxSellPrice": 291
+      }
+    },
+    {
+      "id": "strawberry-ice-cream",
+      "imageUrl": "/images/shared/game/products/strawberry_icecream_icon.png",
+      "names": {
+        "zh-Hant": "草莓冰淇淋",
+        "en": "Strawberry Ice Cream",
+        "ja": "イチゴアイス"
+      },
+      "stats": {
+        "unlockLevel": 34,
+        "defaultSellPrice": 74,
+        "maxSellPrice": 266
+      }
+    },
+    {
+      "id": "grape-sherbet",
+      "imageUrl": "/images/shared/game/products/grape_sherbet_icon.png",
+      "names": {
+        "zh-Hant": "葡萄雪酪",
+        "en": "Grape Sherbet",
+        "ja": "ぶどうシャーベット"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 0,
+        "maxSellPrice": 0
+      }
+    },
+    {
+      "id": "fruit-yogurt",
+      "imageUrl": "/images/shared/game/products/fruit_yogurt_icon.png",
+      "names": {
+        "zh-Hant": "水果優格",
+        "en": "Fruit Yogurt",
+        "ja": "フルーツヨーグルト"
+      },
+      "stats": {
+        "unlockLevel": 48,
+        "defaultSellPrice": 0,
+        "maxSellPrice": 0
+      }
+    },
+    {
+      "id": "cream-cake",
+      "imageUrl": "/images/shared/game/products/cakeshop-creamcake.png",
+      "names": {
+        "zh-Hant": "鮮奶油蛋糕",
+        "en": "Cream Cake",
+        "ja": "生クリームケーキ"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 42,
+        "maxSellPrice": 151
+      }
+    },
+    {
+      "id": "roll-cake",
+      "imageUrl": "/images/shared/game/products/cakeshop-rollcake.png",
+      "names": {
+        "zh-Hant": "瑞士卷",
+        "en": "Roll Cake",
+        "ja": "ロールケーキ"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 48,
+        "maxSellPrice": 172
+      }
+    },
+    {
+      "id": "chocolate-cake",
+      "imageUrl": "/images/shared/game/products/cakeshop-chocolatecake.png",
+      "names": {
+        "zh-Hant": "巧克力蛋糕",
+        "en": "Chocolate Cake",
+        "ja": "チョコレートケーキ"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 85,
+        "maxSellPrice": 306
+      }
+    },
+    {
+      "id": "strawberry-cake",
+      "imageUrl": "/images/shared/game/products/cakeshop-strawberrycake.png",
+      "names": {
+        "zh-Hant": "草莓蛋糕",
+        "en": "Strawberry Cake",
+        "ja": "イチゴケーキ"
+      },
+      "stats": {
+        "unlockLevel": 35,
+        "defaultSellPrice": 68,
+        "maxSellPrice": 244
+      }
+    },
+    {
+      "id": "light-cheesecake",
+      "imageUrl": "/images/shared/placeholder_logo.svg",
+      "names": {
+        "zh-Hant": "輕乳酪蛋糕",
+        "en": "Light Cheesecake",
+        "ja": "レアチーズケーキ"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 0,
+        "maxSellPrice": 0
+      }
+    },
+    {
+      "id": "fruit-tart",
+      "imageUrl": "/images/shared/placeholder_logo.svg",
+      "names": {
+        "zh-Hant": "水果塔",
+        "en": "Fruit Tart",
+        "ja": "フルーツタルト"
+      },
+      "stats": {
+        "unlockLevel": 0,
+        "defaultSellPrice": 144,
+        "maxSellPrice": 0
+      }
+    },
+  { "id": "brick", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "磚塊", "en": "Brick", "ja": "レンガ" }, "stats": { "unlockLevel": 24, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "silver-bar", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "銀條", "en": "Silver Bar", "ja": "銀のインゴット" }, "stats": { "unlockLevel": 24, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "gold-bar", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "金條", "en": "Gold Bar", "ja": "金のインゴット" }, "stats": { "unlockLevel": 24, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "ruby", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "紅寶石", "en": "Ruby", "ja": "ルビー" }, "stats": { "unlockLevel": 24, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "sapphire", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "藍寶石", "en": "Sapphire", "ja": "サファイア" }, "stats": { "unlockLevel": 24, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "mud", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "泥土", "en": "Mud", "ja": "泥" }, "stats": { "unlockLevel": 0, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "silver-stone", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "銀礦石", "en": "Silver Ore", "ja": "銀鉱石" }, "stats": { "unlockLevel": 0, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "gold-stone", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "金礦石", "en": "Gold Ore", "ja": "金鉱石" }, "stats": { "unlockLevel": 0, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "ruby-stone", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "紅寶石礦石", "en": "Ruby Ore", "ja": "ルビー鉱石" }, "stats": { "unlockLevel": 0, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "sapphire-stone", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "藍寶石礦石", "en": "Sapphire Ore", "ja": "サファイア鉱石" }, "stats": { "unlockLevel": 0, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "soy-sauce-ramen", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "醬油拉麵", "en": "Soy Sauce Ramen", "ja": "醤油ラーメン" }, "stats": { "unlockLevel": 31, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "miso-ramen", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "味噌拉麵", "en": "Miso Ramen", "ja": "味噌ラーメン" }, "stats": { "unlockLevel": 31, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "pork-broth-ramen", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "豚骨拉麵", "en": "Pork Broth Ramen", "ja": "豚骨ラーメン" }, "stats": { "unlockLevel": 31, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "dumpling", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "餃子", "en": "Dumpling", "ja": "餃子" }, "stats": { "unlockLevel": 31, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "fried-rice", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "炒飯", "en": "Fried Rice", "ja": "チャーハン" }, "stats": { "unlockLevel": 32, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "mapo-tofu", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "麻婆豆腐", "en": "Mapo Tofu", "ja": "麻婆豆腐" }, "stats": { "unlockLevel": 32, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "dandan-noodles", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "擔擔麵", "en": "Dandan Noodles", "ja": "担々麺" }, "stats": { "unlockLevel": 32, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "spicy-shrimp", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "辣味蝦仁", "en": "Spicy Shrimp", "ja": "エビチリ" }, "stats": { "unlockLevel": 32, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "pork-donburi", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "豬肉丼", "en": "Pork Donburi", "ja": "豚丼" }, "stats": { "unlockLevel": 35, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "katsudon", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "豬排丼", "en": "Katsudon", "ja": "カツ丼" }, "stats": { "unlockLevel": 35, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "tempura-donburi", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "天婦羅丼", "en": "Tempura Donburi", "ja": "天丼" }, "stats": { "unlockLevel": 35, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "eel-donburi", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "鰻魚丼", "en": "Eel Donburi", "ja": "うな丼" }, "stats": { "unlockLevel": 35, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "tuna-donburi", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "鮪魚丼", "en": "Tuna Donburi", "ja": "まぐろ丼" }, "stats": { "unlockLevel": 35, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "silver-necklace", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "銀項鍊", "en": "Silver Necklace", "ja": "銀のネックレス" }, "stats": { "unlockLevel": 0, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "gold-earring", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "金耳環", "en": "Gold Earring", "ja": "金のイヤリング" }, "stats": { "unlockLevel": 0, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "ruby-ring", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "紅寶石戒指", "en": "Ruby Ring", "ja": "ルビーの指輪" }, "stats": { "unlockLevel": 0, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "sapphire-crown", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "藍寶石皇冠", "en": "Sapphire Crown", "ja": "サファイアの冠" }, "stats": { "unlockLevel": 0, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "strawberry-daifuku", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "草莓大福", "en": "Strawberry Daifuku", "ja": "いちご大福" }, "stats": { "unlockLevel": 0, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "youkan", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "羊羹", "en": "Youkan", "ja": "ようかん" }, "stats": { "unlockLevel": 0, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "adzuki-soup", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "紅豆湯", "en": "Adzuki Soup", "ja": "おしるこ" }, "stats": { "unlockLevel": 0, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "dorayaki", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "銅鑼燒", "en": "Dorayaki", "ja": "どら焼き" }, "stats": { "unlockLevel": 49, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "stir-fried-noodles", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "炒麵", "en": "Stir-fried Noodles", "ja": "焼きそば" }, "stats": { "unlockLevel": 0, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "osaka-yaki", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "大阪燒", "en": "Osaka-yaki", "ja": "お好み焼き" }, "stats": { "unlockLevel": 0, "defaultSellPrice": 0, "maxSellPrice": 0 } },
+  { "id": "salmon-steak", "imageUrl": "/images/shared/placeholder_logo.svg", "names": { "zh-Hant": "鮭魚排", "en": "Salmon Steak", "ja": "サーモンステーキ" }, "stats": { "unlockLevel": 55, "defaultSellPrice": 0, "maxSellPrice": 0 }}
   ]
 }

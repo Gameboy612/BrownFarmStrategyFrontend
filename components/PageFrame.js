@@ -76,6 +76,7 @@ export function PageFrame({ currentPath, eyebrow, title, description, children }
           <div className="flex items-center gap-4">
             <nav className="flex flex-wrap gap-3">
               <NavLink href="/" label={t('nav.home')} currentPath={currentPath} />
+              <NavLink href="/blog" label={t('nav.blog') || 'Blog'} currentPath={currentPath} />
               <NavLink href="/tips" label={t('nav.tips')} currentPath={currentPath} />
               <NavLink href="/resources" label={t('nav.resources')} currentPath={currentPath} />
             </nav>

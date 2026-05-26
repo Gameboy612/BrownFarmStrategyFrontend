@@ -9,8 +9,9 @@
     },
     "stats": {
       "unlockLevel": 2,
-      "maxLevel": 10,
-      "upgradeTime": 30
+      "unlockCost": 20,
+      "buildTime": 30,
+      "buildExperience": 3
     },
     "recipes": [
       {
@@ -120,8 +121,9 @@
     },
     "stats": {
       "unlockLevel": 3,
-      "maxLevel": 10,
-      "upgradeTime": 40
+      "unlockCost": 20,
+      "buildTime": 40,
+      "buildExperience": 8
     },
     "recipes": [
       {
@@ -176,8 +178,9 @@
     },
     "stats": {
       "unlockLevel": 6,
-      "maxLevel": 10,
-      "upgradeTime": 1500
+      "unlockCost": 100,
+      "buildTime": 1500,
+      "buildExperience": 15
     },
     "recipes": [
       {
@@ -228,8 +231,9 @@
     },
     "stats": {
       "unlockLevel": 8,
-      "maxLevel": 10,
-      "upgradeTime": 1800
+      "unlockCost": 350,
+      "buildTime": 1800,
+      "buildExperience": 18
     },
     "recipes": [
       {
@@ -256,6 +260,625 @@
           ]
         }
       }
+    ]
+  },
+  {
+    "id": "stall",
+    "imageUrl": "/images/shared/game/shops/food_cart_icon.png",
+    "names": {
+      "zh-Hant": "小販",
+      "en": "Food Stall",
+      "ja": "屋台"
+    },
+    "stats": {
+      "unlockLevel": 9,
+      "unlockCost": 750,
+      "buildTime": 5400,
+      "buildExperience": 23
+    },
+    "recipes": [
+      {
+        "id": "products/egg-toast",
+        "stats": {
+          "unlockLevel": 9,
+          "productionTime": 1800,
+          "experience": 7,
+          "count": 1,
+          "input": [
+            { "id": "produces/egg", "quantity": 2 },
+            { "id": "crops/wheat", "quantity": 3 }
+          ]
+        }
+      },
+      {
+        "id": "products/hot-dog",
+        "stats": {
+          "unlockLevel": 10,
+          "productionTime": 2700,
+          "experience": 10,
+          "count": 1,
+          "input": [
+            { "id": "crops/wheat", "quantity": 3 },
+            { "id": "produces/pork", "quantity": 1 }
+          ]
+        }
+      },
+      {
+        "id": "products/popcorn",
+        "stats": {
+          "unlockLevel": 12,
+          "productionTime": 1500,
+          "experience": 3,
+          "count": 1,
+          "input": [
+            { "id": "crops/corn", "quantity": 3 }
+          ]
+        }
+      },
+      {
+        "id": "products/ham-egg-sandwich",
+        "stats": {
+          "unlockLevel": 22,
+          "productionTime": 5400,
+          "experience": 22,
+          "count": 1,
+          "input": [
+            { "id": "crops/wheat", "quantity": 2 },
+            { "id": "produces/egg", "quantity": 2 },
+            { "id": "produces/pork", "quantity": 2 }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "creperie",
+    "imageUrl": "/images/shared/game/shops/crepe_shop_icon.png",
+    "names": {
+      "zh-Hant": "可麗餅屋",
+      "en": "Creperie",
+      "ja": "クレープ屋"
+    },
+    "stats": {
+      "unlockLevel": 14,
+      "unlockCost": 3100,
+      "buildTime": null,
+      "buildExperience": null
+    },
+    "recipes": [
+      {
+        "id": "products/crepe",
+        "stats": {
+          "unlockLevel": 14,
+          "productionTime": 2700,
+          "experience": 9,
+          "count": 1,
+          "input": [
+            { "id": "crops/wheat", "quantity": 3 },
+            { "id": "produces/egg", "quantity": 1 },
+            { "id": "produces/milk", "quantity": 1 }
+          ]
+        }
+      },
+      {
+        "id": "products/apple-cinnamon-crepe",
+        "stats": {
+          "unlockLevel": 15,
+          "productionTime": 3300,
+          "experience": 14,
+          "count": 1,
+          "input": [
+            { "id": "crops/wheat", "quantity": 3 },
+            { "id": "tree/apple", "quantity": 1 },
+            { "id": "produces/milk", "quantity": 1 }
+          ]
+        }
+      },
+      {
+        "id": "products/bacon-crepe",
+        "stats": {
+          "unlockLevel": 17,
+          "productionTime": 5100,
+          "experience": 21,
+          "count": 1,
+          "input": [
+            { "id": "crops/wheat", "quantity": 3 },
+            { "id": "produces/pork", "quantity": 2 },
+            { "id": "produces/egg", "quantity": 3 }
+          ]
+        }
+      },
+      {
+        "id": "products/chocolate-crepe",
+        "stats": {
+          "unlockLevel": 28,
+          "productionTime": 6000,
+          "experience": 24,
+          "count": 1,
+          "input": [
+            { "id": "crops/wheat", "quantity": 4 },
+            { "id": "products/cream", "quantity": 1 },
+            { "id": "tree/cocoa", "quantity": 3 }
+          ]
+        }
+      },
+      {
+        "id": "products/strawberry-crepe",
+        "stats": {
+          "unlockLevel": 36,
+          "productionTime": 7200,
+          "experience": 28,
+          "count": 1,
+          "input": [
+            { "id": "crops/wheat", "quantity": 5 },
+            { "id": "products/cream", "quantity": 1 },
+            { "id": "crops/strawberry", "quantity": 3 }
+          ]
+        }
+      },
+      {
+        "id": "products/strawberry-icecream-crepe",
+        "stats": {
+          "unlockLevel": 39,
+          "productionTime": 13200,
+          "experience": null,
+          "count": 1,
+          "input": [
+            { "id": "crops/wheat", "quantity": 5 },
+            { "id": "products/cream", "quantity": 1 },
+            { "id": "crops/strawberry", "quantity": 3 },
+            { "id": "products/vanilla-ice-cream", "quantity": 1 }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "burger",
+    "imageUrl": "/images/shared/game/shops/fast_food_icon.png",
+    "names": {
+      "zh-Hant": "漢堡屋",
+      "en": "Burger Shop",
+      "ja": "バーガー屋"
+    },
+    "stats": {
+      "unlockLevel": 17,
+      "unlockCost": 4300,
+      "buildTime": 10800,
+      "buildExperience": 38
+    },
+    "recipes": [
+      {
+        "id": "products/burger",
+        "stats": {
+          "unlockLevel": 17,
+          "productionTime": 3600,
+          "experience": 19,
+          "count": 1,
+          "input": [
+            { "id": "products/bread", "quantity": 2 },
+            { "id": "produces/pork", "quantity": 2 }
+          ]
+        }
+      },
+      {
+        "id": "products/fries",
+        "stats": {
+          "unlockLevel": 17,
+          "productionTime": 1800,
+          "experience": 12,
+          "count": 1,
+          "input": [
+            { "id": "crops/potato", "quantity": 2 }
+          ]
+        }
+      },
+      {
+        "id": "products/spicy-cheese-burger",
+        "stats": {
+          "unlockLevel": 17,
+          "productionTime": 10800,
+          "experience": 34,
+          "count": 1,
+          "input": [
+            { "id": "products/bread", "quantity": 2 },
+            { "id": "produces/pork", "quantity": 1 },
+            { "id": "crops/chili", "quantity": 2 },
+            { "id": "products/cheese", "quantity": 1 }
+          ]
+        }
+      },
+      {
+        "id": "products/apple-pie",
+        "stats": {
+          "unlockLevel": 17,
+          "productionTime": 7200,
+          "experience": 16,
+          "count": 1,
+          "input": [
+            { "id": "crops/wheat", "quantity": 2 },
+            { "id": "tree/apple", "quantity": 3 },
+            { "id": "produces/egg", "quantity": 2 }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "coffeeshop",
+    "imageUrl": "/images/shared/game/shops/coffeeshop_icon.png",
+    "names": {
+      "zh-Hant": "咖啡館",
+      "en": "Coffeeshop",
+      "ja": "カフェ"
+    },
+    "stats": {
+      "unlockLevel": 19,
+      "maxLevel": 10,
+      "upgradeTime": null
+    },
+    "recipes": [
+      {
+        "id": "products/espresso",
+        "stats": {
+          "unlockLevel": 19,
+          "productionTime": 600,
+          "experience": 14,
+          "count": 1,
+          "input": []
+        }
+      },
+      {
+        "id": "products/latte",
+        "stats": {
+          "unlockLevel": 19,
+          "productionTime": 900,
+          "experience": 18,
+          "count": 1,
+          "input": []
+        }
+      },
+      {
+        "id": "products/hot-chocolate",
+        "stats": {
+          "unlockLevel": 19,
+          "productionTime": 3600,
+          "experience": 21,
+          "count": 1,
+          "input": []
+        }
+      },
+      {
+        "id": "products/vienna-coffee",
+        "stats": {
+          "unlockLevel": 31,
+          "productionTime": 5400,
+          "experience": 24,
+          "count": 1,
+          "input": []
+        }
+      },
+      {
+        "id": "products/affogato",
+        "stats": {
+          "unlockLevel": 19,
+          "productionTime": 3600,
+          "experience": null,
+          "count": 1,
+          "input": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "baitmaker",
+    "imageUrl": "/images/shared/game/shops/fisher_house_icon.png",
+    "names": {
+      "zh-Hant": "漁夫的家",
+      "en": "Bait Maker",
+      "ja": "釣り師の家"
+    },
+    "stats": {
+      "unlockLevel": 22,
+      "maxLevel": 10,
+      "upgradeTime": null
+    },
+    "recipes": [
+      {
+        "id": "products/normal-bait",
+        "stats": {
+          "unlockLevel": 22,
+          "productionTime": 2700,
+          "experience": 10,
+          "count": 1,
+          "input": []
+        }
+      },
+      {
+        "id": "products/fine-bait",
+        "stats": {
+          "unlockLevel": 22,
+          "productionTime": 3600,
+          "experience": 20,
+          "count": 1,
+          "input": []
+        }
+      },
+      {
+        "id": "products/highend-bait",
+        "stats": {
+          "unlockLevel": 22,
+          "productionTime": 5400,
+          "experience": 30,
+          "count": 1,
+          "input": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "fisher",
+    "imageUrl": "/images/shared/game/shops/fisher_house_brown_icon.png",
+    "names": {
+      "zh-Hant": "漁夫熊大",
+      "en": "Fisher Brown",
+      "ja": "釣り師ブラウン"
+    },
+    "stats": {
+      "unlockLevel": null,
+      "maxLevel": 10,
+      "upgradeTime": null
+    },
+    "recipes": [
+      { "id": "products/shrimp", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/eel", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/salmon", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/tuna", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } }
+    ]
+  },
+  {
+    "id": "juicer",
+    "imageUrl": "/images/shared/game/shops/juicer_shop_icon.png",
+    "names": {
+      "zh-Hant": "果汁屋",
+      "en": "Juicer",
+      "ja": "ジュース屋"
+    },
+    "stats": {
+      "unlockLevel": null,
+      "maxLevel": 10,
+      "upgradeTime": null
+    },
+    "recipes": [
+      { "id": "products/apple-juice", "stats": { "unlockLevel": 0, "productionTime": 2700, "experience": 12, "count": 1, "input": [ { "id": "tree/apple", "quantity": 3 } ] } },
+      { "id": "products/strawberry-juice", "stats": { "unlockLevel": 28, "productionTime": 5400, "experience": 20, "count": 1, "input": [ { "id": "crops/strawberry", "quantity": 3 } ] } },
+      { "id": "products/carrot-juice", "stats": { "unlockLevel": 31, "productionTime": 2100, "experience": 18, "count": 1, "input": [ { "id": "crops/carrot", "quantity": 3 } ] } },
+      { "id": "products/tomato-juice", "stats": { "unlockLevel": 34, "productionTime": 6000, "experience": 22, "count": 1, "input": [ { "id": "crops/tomato", "quantity": 3 } ] } },
+      { "id": "products/grape-juice", "stats": { "unlockLevel": 0, "productionTime": 7200, "experience": null, "count": 1, "input": [ { "id": "tree/grape", "quantity": 3 } ] } },
+      { "id": "products/fruit-juice", "stats": { "unlockLevel": 0, "productionTime": 12000, "experience": null, "count": 1, "input": [ { "id": "tree/apple", "quantity": 2 }, { "id": "crops/strawberry", "quantity": 2 }, { "id": "tree/grape", "quantity": 2 } ] } }
+    ]
+  },
+  {
+    "id": "sauce",
+    "imageUrl": "/images/shared/game/shops/sauce_shop_icon.png",
+    "names": {
+      "zh-Hant": "大豆工坊",
+      "en": "Sauce Shop",
+      "ja": "大豆工房"
+    },
+    "stats": {
+      "unlockLevel": null,
+      "maxLevel": 10,
+      "upgradeTime": null
+    },
+    "recipes": [
+      { "id": "products/soy-sauce", "stats": { "unlockLevel": 0, "productionTime": 3000, "experience": 6, "count": 1, "input": [ { "id": "crops/soybean", "quantity": 4 } ] } },
+      { "id": "products/miso", "stats": { "unlockLevel": 0, "productionTime": 4200, "experience": 7, "count": 1, "input": [ { "id": "crops/soybean", "quantity": 5 } ] } }
+    ]
+  },
+  {
+    "id": "cakeshop",
+    "imageUrl": "/images/shared/game/shops/cake_shop_icon.png",
+    "names": {
+      "zh-Hant": "蛋糕店",
+      "en": "Cake Shop",
+      "ja": "ケーキ屋"
+    },
+    "stats": {
+      "unlockLevel": null,
+      "maxLevel": 10,
+      "upgradeTime": null
+    },
+    "recipes": [
+      { "id": "products/cream-cake", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/roll-cake", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/chocolate-cake", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/strawberry-cake", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/light-cheesecake", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/fruit-tart", "stats": { "unlockLevel": 0, "productionTime": 14400, "experience": null, "count": 1, "input": [ { "id": "tree/grape", "quantity": 1 }, { "id": "crops/strawberry", "quantity": 3 }, { "id": "crops/wheat", "quantity": 3 }, { "id": "products/butter", "quantity": 1 } ] } }
+    ]
+  },
+  {
+    "id": "mine",
+    "imageUrl": "/images/shared/game/shops/mine_icon.png",
+    "names": {
+      "zh-Hant": "礦坑",
+      "en": "Mine",
+      "ja": "鉱山"
+    },
+    "stats": {
+      "unlockLevel": null,
+      "maxLevel": 10,
+      "upgradeTime": 68400
+    },
+    "recipes": [
+      { "id": "products/mud", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/silver-stone", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/gold-stone", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/ruby-stone", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/sapphire-stone", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } }
+    ]
+  },
+  {
+    "id": "furnace",
+    "imageUrl": "/images/shared/game/shops/furnace_icon.png",
+    "names": {
+      "zh-Hant": "熔爐",
+      "en": "Furnace",
+      "ja": "高炉"
+    },
+    "stats": {
+      "unlockLevel": 24,
+      "maxLevel": 10,
+      "upgradeTime": 72000
+    },
+    "recipes": [
+      { "id": "products/brick", "stats": { "unlockLevel": 24, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/silver-bar", "stats": { "unlockLevel": 24, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/gold-bar", "stats": { "unlockLevel": 24, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/ruby", "stats": { "unlockLevel": 24, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/sapphire", "stats": { "unlockLevel": 24, "productionTime": null, "experience": null, "count": 1, "input": [] } }
+    ]
+  },   
+  {
+    "id": "ramen",
+    "imageUrl": "/images/shared/game/shops/ramen_shop_icon.png",
+    "names": {
+      "zh-Hant": "拉麵店",
+      "en": "Ramen Shop",
+      "ja": "ラーメン屋"
+    },
+    "stats": {
+      "unlockLevel": 31,
+      "maxLevel": 10,
+      "upgradeTime": 115200
+    },
+    "recipes": [
+      { "id": "products/soy-sauce-ramen", "stats": { "unlockLevel": 31, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/miso-ramen", "stats": { "unlockLevel": 31, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/pork-broth-ramen", "stats": { "unlockLevel": 31, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/dumpling", "stats": { "unlockLevel": 31, "productionTime": null, "experience": null, "count": 1, "input": [] } }
+    ]
+  },
+  {
+    "id": "chineserestaurant",
+    "imageUrl": "/images/shared/game/shops/chinese_restaurant_icon.png",
+    "names": {
+      "zh-Hant": "中華料理店",
+      "en": "Chinese Restaurant",
+      "ja": "中華料理店"
+    },
+    "stats": {
+      "unlockLevel": 32,
+      "maxLevel": 10,
+      "upgradeTime": null
+    },
+    "recipes": [
+      { "id": "products/fried-rice", "stats": { "unlockLevel": 32, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/mapo-tofu", "stats": { "unlockLevel": 32, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/dandan-noodles", "stats": { "unlockLevel": 32, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/spicy-shrimp", "stats": { "unlockLevel": 32, "productionTime": null, "experience": null, "count": 1, "input": [] } }
+    ]
+  },
+  {
+    "id": "donhan",
+    "imageUrl": "/images/shared/game/shops/donburi_shop_icon.png",
+    "names": {
+      "zh-Hant": "丼飯屋",
+      "en": "Donburi Shop",
+      "ja": "どんぶり屋"
+    },
+    "stats": {
+      "unlockLevel": 35,
+      "maxLevel": 10,
+      "upgradeTime": null
+    },
+    "recipes": [
+      { "id": "products/pork-donburi", "stats": { "unlockLevel": 35, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/katsudon", "stats": { "unlockLevel": 35, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/tempura-donburi", "stats": { "unlockLevel": 35, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/eel-donburi", "stats": { "unlockLevel": 35, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/tuna-donburi", "stats": { "unlockLevel": 35, "productionTime": null, "experience": null, "count": 1, "input": [] } }
+    ]
+  },
+  {
+    "id": "jewelry",
+    "imageUrl": "/images/shared/game/shops/jewelry_shop_icon.png",
+    "names": {
+      "zh-Hant": "珠寶店",
+      "en": "Jewelry Shop",
+      "ja": "宝石商"
+    },
+    "stats": {
+      "unlockLevel": null,
+      "maxLevel": 10,
+      "upgradeTime": null
+    },
+    "recipes": [
+      { "id": "products/silver-necklace", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/gold-earring", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/ruby-ring", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/sapphire-crown", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } }
+    ]
+  },
+  {
+    "id": "japandesert",
+    "imageUrl": "/images/shared/game/shops/japanese_dessert_shop_icon.png",
+    "names": {
+      "zh-Hant": "和菓子屋",
+      "en": "Japanese Dessert Shop",
+      "ja": "和菓子屋"
+    },
+    "stats": {
+      "unlockLevel": null,
+      "maxLevel": 10,
+      "upgradeTime": null
+    },
+    "recipes": [
+      { "id": "products/strawberry-daifuku", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/youkan", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/adzuki-soup", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/dorayaki", "stats": { "unlockLevel": 49, "productionTime": 0, "experience": null, "count": 1, "input": [] } }
+    ]
+  },
+  {
+    "id": "teppanyaki",
+    "imageUrl": "/images/shared/game/shops/teppanyaki_shop_icon.png",
+    "names": {
+      "zh-Hant": "鐵板燒",
+      "en": "Teppanyaki",
+      "ja": "鉄板燒き屋"
+    },
+    "stats": {
+      "unlockLevel": null,
+      "maxLevel": 10,
+      "upgradeTime": null
+    },
+    "recipes": [
+      { "id": "products/stir-fried-noodles", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/osaka-yaki", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/salmon-steak", "stats": { "unlockLevel": 55, "productionTime": null, "experience": null, "count": 1, "input": [] } }
+    ]
+  },
+  {
+    "id": "icecreamcar",
+    "imageUrl": "/images/shared/game/shops/icecream_shop_icon.png",
+    "names": {
+      "zh-Hant": "冰淇淋屋",
+      "en": "Ice Cream Shop",
+      "ja": "アイスクリーム屋"
+    },
+    "stats": {
+      "unlockLevel": 29,
+      "maxLevel": 10,
+      "upgradeTime": 100800
+    },
+    "recipes": [
+      { "id": "products/vanilla-ice-cream", "stats": { "unlockLevel": 29, "productionTime": 4200, "experience": 20, "count": 1, "input": [ { "id": "products/cream", "quantity": 1 }, { "id": "products/sugar", "quantity": 2 }, { "id": "produces/milk", "quantity": 1 } ] } },
+      { "id": "products/chocolate-ice-cream", "stats": { "unlockLevel": 33, "productionTime": 6600, "experience": 30, "count": 1, "input": [ { "id": "crops/cocoa", "quantity": 2 }, { "id": "products/cream", "quantity": 1 }, { "id": "produces/milk", "quantity": 1 }, { "id": "products/sugar", "quantity": 1 } ] } },
+      { "id": "products/strawberry-ice-cream", "stats": { "unlockLevel": 34, "productionTime": 8100, "experience": 33, "count": 1, "input": [ { "id": "products/cream", "quantity": 1 }, { "id": "products/sugar", "quantity": 1 }, { "id": "produces/milk", "quantity": 1 }, { "id": "crops/strawberry", "quantity": 3 } ] } },
+      { "id": "products/grape-sherbet", "stats": { "unlockLevel": 0, "productionTime": 7200, "experience": null, "count": 1, "input": [ { "id": "products/syrup", "quantity": 1 }, { "id": "tree/grape", "quantity": 3 } ] } },
+      { "id": "products/fruit-yogurt", "stats": { "unlockLevel": 48, "productionTime": null, "experience": null, "count": 1, "input": [] } }
     ]
   }
 ]

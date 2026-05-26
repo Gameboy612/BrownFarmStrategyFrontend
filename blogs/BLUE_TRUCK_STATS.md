@@ -43,6 +43,10 @@ Level 5:
 Hamburger: 3
 French Fries: 5-7
 
+Juice:
+Level 2:
+Apple Juice: 3
+
 ---
 Truck Refresh Time:
 Level 22: 9min30sec

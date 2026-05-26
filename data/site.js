@@ -39,6 +39,7 @@ export const site = {
     '整理 LINE Brown Farm 的首頁總覽、實戰技巧與外部資源，並以統一主題呈現成一個可直接部署的靜態 Wiki。',
   nav: [
     { href: '/', label: '首頁' },
+    { href: '/blog', label: 'Blog' },
     { href: '/tips', label: 'Tips' },
     { href: '/resources', label: 'Resources' },
   ],

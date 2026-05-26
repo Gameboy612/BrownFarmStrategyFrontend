@@ -54,6 +54,16 @@ a {
   text-decoration: none;
 }
 
+
 ::selection {
   background: rgba(206, 175, 109, 0.35);
+}
+
+/* Add borders to tables in prose */
+.prose table {
+  @apply border border-gray-300;
+}
+.prose th,
+.prose td {
+  @apply border border-gray-300 px-2 py-1;
 }
