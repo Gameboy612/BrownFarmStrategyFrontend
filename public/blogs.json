@@ -20,23 +20,6 @@
     }
   },
   {
-    "id": "skip-truck-animation",
-    "date": "2026-05-26",
-    "tags": [
-      "Strategy"
-    ],
-    "author": "ハルキ",
-    "title": {
-      "zh-Hant": "【攻略】跳過貨車動畫"
-    },
-    "summary": {
-      "zh-Hant": null
-    },
-    "content": {
-      "zh-Hant": "之前刷貨車任務的時候\n每次都要等貨車走到沙灘那邊\n再回頭等它走回來，感覺很浪費時間。\n\n後來無意間發現一個小技巧\n可以跳過這段動畫\n節省不少時間\n\n在提交貨車訂單時\n有一段~20秒動畫會播放\n當把貨車訂單提交後\n立即切換到其他區域（例如朋友農場、釣魚島、農場房間等）\n就可以跳過這段動畫。\n\n當切換區域時\n可以利用這個特性來跳過動畫\n節省時間。"
-    }
-  },
-  {
     "id": "achievement-use-gems",
     "date": "2026-05-27",
     "tags": [
@@ -54,6 +37,23 @@
     },
     "content": {
       "zh-Hant": "有個成就可以花費鑽石獲得更多鑽石\n很多時都不捨得用\n不知什麼時候花鑽石加速最好\n\n![花鑽送鑽成就](/images/shared/blogs/achievement-use-gems/achievement.jpg)\n\n以下是我個人建議的使用策略：\n1. 麵包店製作麵包（應急鑽石可用）\n2. 跑任務如火車時，急速生產任務物資（如奶油、魚餌等）\n3. 「交換商店」限定活動交換道具\n    ![小丸子的甜甜圈咖啡店](/images/shared/blogs/achievement-use-gems/donut_shop.png)\n\n---\n新手可以透過隱藏任務獲得50免費鑽石：\n[【隱藏任務】大叔新手50鑽](/blog/zh-Hant/newcomer-50-gems)\n\n新手鑽石使用策略：\n[【攻略】無課鑽石使用策略](/blog/zh-Hant/gems-strategy)"
+    }
+  },
+  {
+    "id": "skip-truck-animation",
+    "date": "2026-05-26",
+    "tags": [
+      "Strategy"
+    ],
+    "author": "ハルキ",
+    "title": {
+      "zh-Hant": "【攻略】跳過貨車動畫"
+    },
+    "summary": {
+      "zh-Hant": "/images/shared/blogs/skip-truck-animation/thumbnail.png"
+    },
+    "content": {
+      "zh-Hant": "之前刷貨車任務的時候\n每次都要等貨車走到沙灘那邊\n再回頭等它走回來，感覺很浪費時間。\n\n![貨車](/images/shared/blogs/skip-truck-animation/thumbnail.png)\n\n後來無意間發現一個小技巧\n可以跳過這段動畫\n節省不少時間\n\n在提交貨車訂單時\n有一段~20秒動畫會播放\n當把貨車訂單提交後\n立即切換到其他區域（例如朋友農場、釣魚島、農場房間等）\n就可以跳過這段動畫。\n\n當切換區域時\n可以利用這個特性來跳過動畫\n節省時間。"
     }
   },
   {
