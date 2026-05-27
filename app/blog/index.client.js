@@ -75,16 +75,16 @@ export default function BlogIndex() {
               )}
             </div>
             <div className="flex-1 flex gap-4 p-4 items-center">
-              {post.coverImage && (
-                <div className="w-28 h-16 flex-shrink-0 border border-line bg-white flex items-center justify-center overflow-hidden">
-                  <img src={post.coverImage} alt="cover" className="object-cover w-full h-full" />
+              {post.img && post.img[locale] && (
+                <div className="h-[4rem] w-[6rem] flex-shrink-0 border border-line bg-white flex items-center justify-center overflow-hidden">
+                  <img src={post.img[locale]} alt="cover" className="object-cover w-full h-full" />
                 </div>
               )}
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-1">
-                  <Link href={`/blog/${locale}/${post.slug}`} className="text-lg font-semibold text-primary hover:underline truncate">
+                  <p className="text-lg font-semibold text-primary hover:underline truncate">
                     {post.title[locale]}
-                  </Link>
+                  </p>
                 </div>
                 <div className="text-sm text-gray-500 truncate text-wrap">
                   {post.summary[locale] || (post.content[locale] || '').slice(0, 100) + '...'}

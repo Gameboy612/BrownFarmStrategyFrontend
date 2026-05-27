@@ -24,10 +24,12 @@ def parse_blog_content(content):
     metadata = {}
     body_lines = []
     in_metadata = False
-
+    content_started = False
     for line in lines:
-        if line.strip() == '---':
+        if (not content_started) and line.strip() == '---':
             in_metadata = not in_metadata
+            if not in_metadata:
+                content_started = True
             continue
         if in_metadata:
             if ':' in line:

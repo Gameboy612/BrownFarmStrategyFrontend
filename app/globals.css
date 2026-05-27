@@ -54,6 +54,26 @@ a {
   text-decoration: none;
 }
 
+.prose a {
+  color: #1d4ed8;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.prose ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+}
+
+.prose ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin: 0.35rem 0;
+}
+
 
 ::selection {
   background: rgba(206, 175, 109, 0.35);
@@ -66,4 +86,31 @@ a {
 .prose th,
 .prose td {
   @apply border border-gray-300 px-2 py-1;
+}
+
+/* Horizontal rule spacing in prose */
+.prose hr {
+  @apply my-6 border-t border-line;
+}
+
+/* Prose heading and paragraph styles */
+.prose h1 {
+  @apply text-2xl md:text-3xl font-bold mt-6 mb-4;
+  color: var(--text);
+}
+.prose h2 {
+  @apply text-xl md:text-2xl font-semibold mt-5 mb-3;
+  color: var(--text);
+}
+.prose h3 {
+  @apply text-lg md:text-xl font-semibold mt-4 mb-2;
+  color: var(--text);
+}
+.prose h4 {
+  @apply text-base md:text-lg font-medium mt-3 mb-2;
+  color: var(--text);
+}
+.prose p {
+  @apply leading-relaxed mb-3;
+  color: var(--text);
 }

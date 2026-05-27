@@ -63,6 +63,10 @@ Juice:
 Level 2:
 Apple Juice: 3
 
+Ice Cream:
+Level 2:
+Vanilla Ice Cream: 2
+
 ---
 Truck Refresh Time:
 Level 22: 9min30sec
