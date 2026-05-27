@@ -7,6 +7,7 @@ import Slideshow from '../components/Slideshow.client';
 import ShopSlot from '../components/shop/ShopSlot';
 import ShopHeader from '../components/shop/ShopHeader';
 import { useLocale } from '../components/IntlProvider.client';
+import BlogIndexClient from './blog/index.client';
 
 export default function HomePage() {
   const { t, locale } = useLocale();
@@ -28,7 +29,18 @@ export default function HomePage() {
               <Slideshow locale={locale} images={site.eventGalleryByLocale?.[locale] && site.eventGalleryByLocale[locale].length > 0 ? site.eventGalleryByLocale[locale] : site.eventGallery} />
             </div>
           </div>
-
+        </section>
+        
+        <section id="blog" className="space-y-6 border-t border-line pt-12">
+          <SectionTitle
+            eyebrow="Blog"
+            title="Blog"
+            description=""
+          />
+          <BlogIndexClient lang={locale} />
+        </section>
+        
+        <section>  
           <div className="mt-6">
             <ShopHeader title="物資" />
             <div className="mt-4 grid gap-4 sm:gap-6 md:gap-8 grid-cols-2 sm:grid-cols-3 sm:mx-[5%] md:mx-[10%] lg:mx-[15%]">
@@ -37,16 +49,8 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-          </section>
-
-          <section id="blog" className="space-y-6 border-t border-line pt-12">
-          <SectionTitle
-            eyebrow="Blog"
-            title="Blog"
-            description=""
-          />
-
         </section>
+
 
         <section className="grid gap-5 border-t border-line pt-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="border border-line bg-paper p-6 shadow-panel">
