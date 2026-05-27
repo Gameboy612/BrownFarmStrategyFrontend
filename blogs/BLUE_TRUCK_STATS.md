@@ -24,6 +24,10 @@ Apple Crepe: 4
 Bacon Crepe: 4
 
 Cake:
+Level 0:
+Fresh Cream Cake: 1
+Roll Cake: 2
+
 Level 1:
 Fresh Cream Cake: 2
 

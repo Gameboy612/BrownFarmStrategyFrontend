@@ -1,12 +1,14 @@
 [
   {
     "id": "skip-truck-animation",
+    "date": "2026-05-26",
+    "tags": [
+      "Strategy"
+    ],
+    "author": "ハルキ",
     "title": {
       "zh-Hant": "【攻略】跳過貨車動畫"
     },
-    "date": "2026-05-26",
-    "tags": ["Strategy"],
-    "author": "ハルキ",
     "summary": {
       "zh-Hant": null
     },
