@@ -53,7 +53,7 @@ export default function ProductsPage() {
                   const productionTime = recipe?.stats?.productionTime ?? null;
 
                   return (
-                    <div key={product.id} className="w-[6rem] shrink-0 sm:w-[8rem] md:w-[12rem]">
+                    <div key={product.id} className="w-[6rem] shrink-0 sm:w-[8rem] md:w-[11rem]">
                       <ShopSlot
                         href={`/products/${product.id}`}
                         icon={product.imageUrl}

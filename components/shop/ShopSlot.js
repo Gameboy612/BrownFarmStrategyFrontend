@@ -26,7 +26,7 @@ function SlotContent({ icon, title, onIconPointerEnter, onIconPointerMove, onIco
       >
         <img src={icon} alt="" aria-hidden="true" className="h-full w-full object-contain" />
       </span>
-      <span className="absolute left-1/2 top-[83%] w-full -translate-x-1/2 -translate-y-1/2 px-4">
+      <span className="absolute left-1/2 top-[83%] w-full -translate-x-1/2 -translate-y-1/2 px-2 md:px-4">
         <ShopSlotTitle title={title} />
       </span>
     </span>
