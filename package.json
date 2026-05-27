@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export",
+    "rebuild": "npm run build && npm run export"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
@@ -13,6 +15,7 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "remark": "^15.0.1",
+    "remark-gfm": "^4.0.1",
     "remark-html": "^16.0.1"
   },
   "devDependencies": {
