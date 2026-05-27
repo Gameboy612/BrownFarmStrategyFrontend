@@ -506,7 +506,7 @@
   },
   {
     "id": "coffeeshop",
-    "imageUrl": "/images/shared/game/shops/coffeeshop_icon.png",
+    "imageUrl": "/images/shared/game/shops/coffee_shop_icon.png",
     "names": {
       "zh-Hant": "咖啡館",
       "en": "Coffeeshop",
@@ -525,7 +525,9 @@
           "productionTime": 600,
           "experience": 14,
           "count": 1,
-          "input": []
+          "input": [
+            { "id": "tree/coffee", "quantity": 3 }
+          ]
         }
       },
       {
@@ -535,7 +537,10 @@
           "productionTime": 900,
           "experience": 18,
           "count": 1,
-          "input": []
+          "input": [
+            { "id": "tree/coffee", "quantity": 2 },
+            { "id": "produces/sugar", "quantity": 1 }
+          ]
         }
       },
       {
@@ -545,7 +550,11 @@
           "productionTime": 3600,
           "experience": 21,
           "count": 1,
-          "input": []
+          "input": [
+            { "id": "tree/cocoa", "quantity": 3 },
+            { "id": "products/cream", "quantity": 1 },
+            { "id": "products/sugar", "quantity": 1 }
+          ]
         }
       },
       {
@@ -637,48 +646,8 @@
     ]
   },
   {
-    "id": "juicer",
-    "imageUrl": "/images/shared/game/shops/juicer_shop_icon.png",
-    "names": {
-      "zh-Hant": "果汁屋",
-      "en": "Juicer",
-      "ja": "ジュース屋"
-    },
-    "stats": {
-      "unlockLevel": null,
-      "maxLevel": 10,
-      "upgradeTime": null
-    },
-    "recipes": [
-      { "id": "products/apple-juice", "stats": { "unlockLevel": 0, "productionTime": 2700, "experience": 12, "count": 1, "input": [ { "id": "tree/apple", "quantity": 3 } ] } },
-      { "id": "products/strawberry-juice", "stats": { "unlockLevel": 28, "productionTime": 5400, "experience": 20, "count": 1, "input": [ { "id": "crops/strawberry", "quantity": 3 } ] } },
-      { "id": "products/carrot-juice", "stats": { "unlockLevel": 31, "productionTime": 2100, "experience": 18, "count": 1, "input": [ { "id": "crops/carrot", "quantity": 3 } ] } },
-      { "id": "products/tomato-juice", "stats": { "unlockLevel": 34, "productionTime": 6000, "experience": 22, "count": 1, "input": [ { "id": "crops/tomato", "quantity": 3 } ] } },
-      { "id": "products/grape-juice", "stats": { "unlockLevel": 0, "productionTime": 7200, "experience": null, "count": 1, "input": [ { "id": "tree/grape", "quantity": 3 } ] } },
-      { "id": "products/fruit-juice", "stats": { "unlockLevel": 0, "productionTime": 12000, "experience": null, "count": 1, "input": [ { "id": "tree/apple", "quantity": 2 }, { "id": "crops/strawberry", "quantity": 2 }, { "id": "tree/grape", "quantity": 2 } ] } }
-    ]
-  },
-  {
-    "id": "sauce",
-    "imageUrl": "/images/shared/game/shops/sauce_shop_icon.png",
-    "names": {
-      "zh-Hant": "大豆工坊",
-      "en": "Sauce Shop",
-      "ja": "大豆工房"
-    },
-    "stats": {
-      "unlockLevel": null,
-      "maxLevel": 10,
-      "upgradeTime": null
-    },
-    "recipes": [
-      { "id": "products/soy-sauce", "stats": { "unlockLevel": 0, "productionTime": 3000, "experience": 6, "count": 1, "input": [ { "id": "crops/soybean", "quantity": 4 } ] } },
-      { "id": "products/miso", "stats": { "unlockLevel": 0, "productionTime": 4200, "experience": 7, "count": 1, "input": [ { "id": "crops/soybean", "quantity": 5 } ] } }
-    ]
-  },
-  {
     "id": "cakeshop",
-    "imageUrl": "/images/shared/game/shops/cake_shop_icon.png",
+    "imageUrl": "/images/shared/game/shops/cake_bakery_icon.png",
     "names": {
       "zh-Hant": "蛋糕店",
       "en": "Cake Shop",
@@ -740,6 +709,67 @@
       { "id": "products/sapphire", "stats": { "unlockLevel": 24, "productionTime": null, "experience": null, "count": 1, "input": [] } }
     ]
   },   
+  {
+    "id": "juicer",
+    "imageUrl": "/images/shared/game/shops/juice_machine_icon.png",
+    "names": {
+      "zh-Hant": "果汁屋",
+      "en": "Juicer",
+      "ja": "ジュース屋"
+    },
+    "stats": {
+      "unlockLevel": null,
+      "maxLevel": 10,
+      "upgradeTime": null
+    },
+    "recipes": [
+      { "id": "products/apple-juice", "stats": { "unlockLevel": 0, "productionTime": 2700, "experience": 12, "count": 1, "input": [ { "id": "tree/apple", "quantity": 3 } ] } },
+      { "id": "products/strawberry-juice", "stats": { "unlockLevel": 28, "productionTime": 5400, "experience": 20, "count": 1, "input": [ { "id": "crops/strawberry", "quantity": 3 } ] } },
+      { "id": "products/carrot-juice", "stats": { "unlockLevel": 31, "productionTime": 2100, "experience": 18, "count": 1, "input": [ { "id": "crops/carrot", "quantity": 3 } ] } },
+      { "id": "products/tomato-juice", "stats": { "unlockLevel": 34, "productionTime": 6000, "experience": 22, "count": 1, "input": [ { "id": "crops/tomato", "quantity": 3 } ] } },
+      { "id": "products/grape-juice", "stats": { "unlockLevel": 0, "productionTime": 7200, "experience": null, "count": 1, "input": [ { "id": "tree/grape", "quantity": 3 } ] } },
+      { "id": "products/fruit-juice", "stats": { "unlockLevel": 0, "productionTime": 12000, "experience": null, "count": 1, "input": [ { "id": "tree/apple", "quantity": 2 }, { "id": "crops/strawberry", "quantity": 2 }, { "id": "tree/grape", "quantity": 2 } ] } }
+    ]
+  },
+  {
+    "id": "sauce",
+    "imageUrl": "/images/shared/game/shops/sauce_maker_icon.png",
+    "names": {
+      "zh-Hant": "大豆工坊",
+      "en": "Sauce Shop",
+      "ja": "大豆工房"
+    },
+    "stats": {
+      "unlockLevel": null,
+      "maxLevel": 10,
+      "upgradeTime": null
+    },
+    "recipes": [
+      { "id": "products/soy-sauce", "stats": { "unlockLevel": 0, "productionTime": 3000, "experience": 6, "count": 1, "input": [ { "id": "crops/soybean", "quantity": 4 } ] } },
+      { "id": "products/miso", "stats": { "unlockLevel": 0, "productionTime": 4200, "experience": 7, "count": 1, "input": [ { "id": "crops/soybean", "quantity": 5 } ] } }
+    ]
+  },
+  {
+    "id": "icecreamcar",
+    "imageUrl": "/images/shared/game/shops/icecream_shop_icon.png",
+    "names": {
+      "zh-Hant": "冰淇淋屋",
+      "en": "Ice Cream Shop",
+      "ja": "アイスクリーム屋"
+    },
+    "stats": {
+      "unlockLevel": 29,
+      "maxLevel": 10,
+      "upgradeTime": 100800
+    },
+    "recipes": [
+      { "id": "products/vanilla-ice-cream", "stats": { "unlockLevel": 29, "productionTime": 4200, "experience": 20, "count": 1, "input": [ { "id": "products/cream", "quantity": 1 }, { "id": "products/sugar", "quantity": 2 }, { "id": "produces/milk", "quantity": 1 } ] } },
+      { "id": "products/chocolate-ice-cream", "stats": { "unlockLevel": 33, "productionTime": 6600, "experience": 30, "count": 1, "input": [ { "id": "crops/cocoa", "quantity": 2 }, { "id": "products/cream", "quantity": 1 }, { "id": "produces/milk", "quantity": 1 }, { "id": "products/sugar", "quantity": 1 } ] } },
+      { "id": "products/strawberry-ice-cream", "stats": { "unlockLevel": 34, "productionTime": 8100, "experience": 33, "count": 1, "input": [ { "id": "products/cream", "quantity": 1 }, { "id": "products/sugar", "quantity": 1 }, { "id": "produces/milk", "quantity": 1 }, { "id": "crops/strawberry", "quantity": 3 } ] } },
+      { "id": "products/grape-sherbet", "stats": { "unlockLevel": 0, "productionTime": 7200, "experience": null, "count": 1, "input": [ { "id": "products/syrup", "quantity": 1 }, { "id": "tree/grape", "quantity": 3 } ] } },
+      { "id": "products/fruit-yogurt", "stats": { "unlockLevel": 48, "productionTime": null, "experience": null, "count": 1, "input": [] } }
+    ]
+  },
   {
     "id": "ramen",
     "imageUrl": "/images/shared/game/shops/ramen_shop_icon.png",
@@ -823,7 +853,7 @@
   },
   {
     "id": "japandesert",
-    "imageUrl": "/images/shared/game/shops/japanese_dessert_shop_icon.png",
+    "imageUrl": "/images/shared/game/shops/wagashi_shop_icon",
     "names": {
       "zh-Hant": "和菓子屋",
       "en": "Japanese Dessert Shop",
@@ -843,7 +873,7 @@
   },
   {
     "id": "teppanyaki",
-    "imageUrl": "/images/shared/game/shops/teppanyaki_shop_icon.png",
+    "imageUrl": "/images/shared/game/shops/teppanyaki_icon.png",
     "names": {
       "zh-Hant": "鐵板燒",
       "en": "Teppanyaki",
@@ -861,24 +891,41 @@
     ]
   },
   {
-    "id": "icecreamcar",
-    "imageUrl": "/images/shared/game/shops/icecream_shop_icon.png",
+    "id": "italianrestaurant",
+    "imageUrl": "/images/shared/game/shops/italian_restaurant_icon.png",
     "names": {
-      "zh-Hant": "冰淇淋屋",
-      "en": "Ice Cream Shop",
-      "ja": "アイスクリーム屋"
+      "zh-Hant": "義大利餐廳",
+      "en": "Italian Restaurant",
+      "ja": "イタリア料理店"
     },
     "stats": {
-      "unlockLevel": 29,
+      "unlockLevel": null,
       "maxLevel": 10,
-      "upgradeTime": 100800
+      "upgradeTime": null
     },
     "recipes": [
-      { "id": "products/vanilla-ice-cream", "stats": { "unlockLevel": 29, "productionTime": 4200, "experience": 20, "count": 1, "input": [ { "id": "products/cream", "quantity": 1 }, { "id": "products/sugar", "quantity": 2 }, { "id": "produces/milk", "quantity": 1 } ] } },
-      { "id": "products/chocolate-ice-cream", "stats": { "unlockLevel": 33, "productionTime": 6600, "experience": 30, "count": 1, "input": [ { "id": "crops/cocoa", "quantity": 2 }, { "id": "products/cream", "quantity": 1 }, { "id": "produces/milk", "quantity": 1 }, { "id": "products/sugar", "quantity": 1 } ] } },
-      { "id": "products/strawberry-ice-cream", "stats": { "unlockLevel": 34, "productionTime": 8100, "experience": 33, "count": 1, "input": [ { "id": "products/cream", "quantity": 1 }, { "id": "products/sugar", "quantity": 1 }, { "id": "produces/milk", "quantity": 1 }, { "id": "crops/strawberry", "quantity": 3 } ] } },
-      { "id": "products/grape-sherbet", "stats": { "unlockLevel": 0, "productionTime": 7200, "experience": null, "count": 1, "input": [ { "id": "products/syrup", "quantity": 1 }, { "id": "tree/grape", "quantity": 3 } ] } },
-      { "id": "products/fruit-yogurt", "stats": { "unlockLevel": 48, "productionTime": null, "experience": null, "count": 1, "input": [] } }
+      { "id": "products/spaghetti", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/lasagna", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/pizza", "stats": { "unlockLevel": 60, "productionTime": null, "experience": null, "count": 1, "input": [] } }
+    ]
+  },
+  {
+    "id": "sushiya",
+    "imageUrl": "/images/shared/game/shops/sushi_shop_icon.png",
+    "names": {
+      "zh-Hant": "壽司屋",
+      "en": "Sushi Restaurant",
+      "ja": "寿司屋"
+    },
+    "stats": {
+      "unlockLevel": null,
+      "maxLevel": 10,
+      "upgradeTime": null
+    },
+    "recipes": [
+      { "id": "products/sushi-roll", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/nigiri", "stats": { "unlockLevel": null, "productionTime": null, "experience": null, "count": 1, "input": [] } },
+      { "id": "products/sashimi", "stats": { "unlockLevel": 65, "productionTime": null, "experience": null, "count": 1, "input": [] } }
     ]
   }
 ]
