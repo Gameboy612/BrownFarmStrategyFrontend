@@ -4,7 +4,8 @@ title: 【攻略】跳過貨車動畫
 date: 2026-05-26
 tags: ["Strategy"]
 author: ハルキ
-summary: /images/shared/blogs/skip-truck-animation/thumbnail.png
+summary: null
+img: /images/shared/blogs/skip-truck-animation/thumbnail.png
 ---
 之前刷貨車任務的時候
 每次都要等貨車走到沙灘那邊
