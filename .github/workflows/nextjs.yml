@@ -8,6 +8,14 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
+    paths-ignore:
+      - 'blogs/entries/**'
+
+  # Runs after the blog loader workflow finishes
+  workflow_run:
+    workflows: ["Load Blog Entries"]
+    types:
+      - completed
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
