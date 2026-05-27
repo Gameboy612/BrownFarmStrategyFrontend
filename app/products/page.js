@@ -39,21 +39,21 @@ export default function ProductsPage() {
           <SectionTitle
             eyebrow={t('products.intro.eyebrow')}
             title={t('products.intro.title')}
-            description={t('products.intro.description')}
+            // description={t('products.intro.description')}
           />
         </section>
 
         <div className="">
           {shops.map((shop) => (
             <Shop key={shop.id} title={shop.names[localeName]} icon={shop.imageUrl}>
-              <div className="flex gap-4">
+              <div className="flex items-center h-full gap-2 sm:gap-4">
                 {shop.products.map((product) => {
                   // find recipe for this product to get productionTime
                   const recipe = shop.recipes.find((r) => r.id === `products/${product.id}`);
                   const productionTime = recipe?.stats?.productionTime ?? null;
 
                   return (
-                    <div key={product.id} className="w-[9rem] shrink-0 sm:w-[12rem] md:w-[13rem]">
+                    <div key={product.id} className="w-[6rem] shrink-0 sm:w-[8rem] md:w-[12rem]">
                       <ShopSlot
                         href={`/products/${product.id}`}
                         icon={product.imageUrl}

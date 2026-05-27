@@ -31,16 +31,8 @@ export default function HomePage() {
           </div>
         </section>
         
-        <section id="blog" className="space-y-6 border-t border-line mt-20 pt-20">
-          <SectionTitle
-            eyebrow="Blog"
-            title="Blog"
-            description=""
-          />
-          <BlogIndexClient lang={locale} />
-        </section>
 
-        <section className="pt-40">  
+        <section className="pt-20">  
           <div>
             <ShopHeader title="物資" />
             <div className="mt-4 grid gap-4 sm:gap-6 md:gap-8 grid-cols-2 sm:grid-cols-3 sm:mx-[5%] md:mx-[10%] lg:mx-[15%]">
@@ -51,7 +43,15 @@ export default function HomePage() {
           </div>
         </section>
 
-
+        <section id="blog" className="space-y-6 border-t border-line mt-20 pt-20 mb-40">
+          <SectionTitle
+            eyebrow="Blog"
+            title="Blog"
+            description=""
+          />
+          <BlogIndexClient lang={locale} />
+        </section>
+{/* 
         <section className="grid gap-5 border-t border-line pt-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="border border-line bg-paper p-6 shadow-panel">
             <SectionTitle eyebrow="摘要" title="這個站的用途" />
@@ -85,7 +85,7 @@ export default function HomePage() {
               </figure>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </PageFrame>
   );
