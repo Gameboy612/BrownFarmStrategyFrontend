@@ -4,9 +4,15 @@ import json
 OUTPUT_DIRECTORY = os.path.join('public', 'blogs.json')
 
 def load_entries():
-    zh_hant_entries = os.listdir(os.path.join('blogs', 'entries', 'zh-Hant'))
-    en_entries = os.listdir(os.path.join('blogs', 'entries', 'en'))
-    ja_entries = os.listdir(os.path.join('blogs', 'entries', 'ja'))
+    def list_entries(lang):
+        directory = os.path.join('blogs', 'entries', lang)
+        if not os.path.isdir(directory):
+            return []
+        return os.listdir(directory)
+
+    zh_hant_entries = list_entries('zh-Hant')
+    en_entries = list_entries('en')
+    ja_entries = list_entries('ja')
     return {
         'zh-Hant': zh_hant_entries,
         'en': en_entries,
