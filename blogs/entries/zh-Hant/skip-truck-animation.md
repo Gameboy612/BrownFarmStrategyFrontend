@@ -4,11 +4,13 @@ title: 【攻略】跳過貨車動畫
 date: 2026-05-26
 tags: ["Strategy"]
 author: ハルキ
-summary: null
+summary: /images/shared/blogs/skip-truck-animation/thumbnail.png
 ---
 之前刷貨車任務的時候
 每次都要等貨車走到沙灘那邊
 再回頭等它走回來，感覺很浪費時間。
+
+![貨車](/images/shared/blogs/skip-truck-animation/thumbnail.png)
 
 後來無意間發現一個小技巧
 可以跳過這段動畫
