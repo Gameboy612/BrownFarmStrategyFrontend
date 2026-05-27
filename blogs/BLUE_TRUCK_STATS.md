@@ -27,8 +27,14 @@ Cake:
 Level 1:
 Fresh Cream Cake: 2
 
-Level 5:
+Level 2:
 Fresh Cream Cake: 3
+
+Level 3:
+Fresh Cream Cake: 3
+
+Level 4:
+Fresh Cream Cake: 4
 
 Coffee:
 Level 1:

@@ -19,7 +19,7 @@ export default function HomePage() {
       title={t('site.name')}
       description={t('site.description')}
     >
-      <div className="space-y-12">
+      <div>
 
         <section className="pt-6">
           <div>
@@ -31,7 +31,7 @@ export default function HomePage() {
           </div>
         </section>
         
-        <section id="blog" className="space-y-6 border-t border-line pt-12">
+        <section id="blog" className="space-y-6 border-t border-line mt-20 pt-20">
           <SectionTitle
             eyebrow="Blog"
             title="Blog"
@@ -39,9 +39,9 @@ export default function HomePage() {
           />
           <BlogIndexClient lang={locale} />
         </section>
-        
-        <section>  
-          <div className="mt-6">
+
+        <section className="pt-40">  
+          <div>
             <ShopHeader title="物資" />
             <div className="mt-4 grid gap-4 sm:gap-6 md:gap-8 grid-cols-2 sm:grid-cols-3 sm:mx-[5%] md:mx-[10%] lg:mx-[15%]">
               {site.homeSlots.map((slot) => (
