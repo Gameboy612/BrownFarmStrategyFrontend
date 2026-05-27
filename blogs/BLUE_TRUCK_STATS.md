@@ -49,6 +49,10 @@ Level 2:
 Espresso: 2
 Cafe Latte: 2
 
+Level 3:
+Espresso: 2
+Cafe Latte: 2
+
 Level 5:
 Espresso: 3
 Cafe Latte: 3
