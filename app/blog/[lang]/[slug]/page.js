@@ -21,12 +21,12 @@ export default async function Page({ params }) {
   const { lang, slug } = params;
   const blogs = await getAllBlogs(lang);
   const blog = blogs.find((b) => b.slug === slug);
-  if (!blog || !blog.title[lang] || !blog.summary[lang] || !blog.content[lang]) return notFound();
+  if (!blog || !blog.title[lang] || !blog.content[lang]) return notFound();
 
   return (
-    <PageFrame currentPath={`/blog/${lang}`}> 
+    <PageFrame currentPath={`/blog/${lang}/${slug}`}> 
       <div className="max-w-2xl mx-auto py-8 px-4">
-        <Link href={`/blog/${lang}`} className="text-primary hover:underline">← Back to Blog</Link>
+        <Link href={`/blog`} className="text-primary hover:underline">← Back to Blog</Link>
         <h1 className="text-3xl font-bold mt-4 mb-2">{blog.title[lang]}</h1>
         <div className="mb-2 text-xs text-clay">{typeof blog.date === 'string' ? blog.date : new Date(blog.date).toLocaleDateString()}</div>
         <div className="mb-4 flex flex-wrap gap-2">

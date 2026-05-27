@@ -39,25 +39,13 @@ export default function HomePage() {
           </div>
           </section>
 
-          <section id="gallery" className="space-y-6 border-t border-line pt-12">
+          <section id="blog" className="space-y-6 border-t border-line pt-12">
           <SectionTitle
-            eyebrow="Gallery"
-            title="Shared visuals"
-            description="All languages reuse the same art from public/images/shared, so the design stays consistent while the copy changes."
+            eyebrow="Blog"
+            title="Blog"
+            description=""
           />
 
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {site.gallery.map((image, index) => (
-              <figure key={`${image.src}-${index}`} className="overflow-hidden border border-line bg-paper shadow-panel">
-                <div className="aspect-[4/3] bg-[linear-gradient(135deg,rgba(206,175,109,0.18),rgba(180,163,151,0.08))]">
-                  <img src={image.src} alt={image.alt} className="h-full w-full object-cover" />
-                </div>
-                <figcaption className="border-t border-line p-4 text-sm text-[rgba(6,9,8,0.72)]">
-                  {image.alt}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
         </section>
 
         <section className="grid gap-5 border-t border-line pt-12 lg:grid-cols-[0.9fr_1.1fr]">

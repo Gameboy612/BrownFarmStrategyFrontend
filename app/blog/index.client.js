@@ -1,30 +1,50 @@
 "use client";
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useLocale } from '../../components/IntlProvider.client';
 
-export default function BlogIndex({ blogs, lang: initialLang }) {
+export default function BlogIndex() {
+  const { t, locale } = useLocale();
   const [search, setSearch] = useState('');
   const [selectedTag, setSelectedTag] = useState('');
-  const [lang, setLang] = useState(initialLang || 'zh-Hant');
+  const [localBlogs, setLocalBlogs] = useState([]);
+  useEffect(() => {
+    console.log('Fetching blogs.json for locale:', locale);
+    fetch('/blogs.json')
+    .then((r) => r.json())
+    .then((data) => {
+        const normalized = data.map((b) => ({
+        ...b,
+        slug: b.id || b.slug,
+        content: Object.fromEntries(
+            // Object.entries(b.content || {}).map(([k, v]) => [k, v ? v.replace(/\n/g, '<br>') : ''])
+            Object.entries(b.content || {}).map(([k, v]) => [k, v ? v : ''])
+        ),
+        title: b.title || {},
+        summary: b.summary || {},
+        }));
+        console.log(normalized)
+        setLocalBlogs(normalized);
+    })
+  }, [locale]);
 
   const filteredBlogs = useMemo(() => {
-    return blogs.filter((post) => {
-      // Only show blogs with this language
-      if (!post.title[lang] || !post.summary[lang] || !post.content[lang]) return false;
+    const source = localBlogs;
+    return source.filter((post) => {
+      if (!post.title?.[locale] || !post.content?.[locale]) return false;
       const matchesSearch =
-        post.title[lang].toLowerCase().includes(search.toLowerCase()) ||
-        post.summary[lang].toLowerCase().includes(search.toLowerCase()) ||
-        post.content[lang].toLowerCase().includes(search.toLowerCase());
+        (post.title[locale] || '').toLowerCase().includes(search.toLowerCase()) ||
+        (post.summary?.[locale] || '').toLowerCase().includes(search.toLowerCase()) ||
+        (post.content[locale] || '').toLowerCase().includes(search.toLowerCase());
       const matchesTag = selectedTag ? post.tags?.includes(selectedTag) : true;
       return matchesSearch && matchesTag;
     });
-  }, [blogs, search, selectedTag, lang]);
+  }, [search, selectedTag, locale, localBlogs]);
 
-  const allTags = Array.from(new Set(blogs.flatMap((b) => b.tags)));
+  const allTags = Array.from(new Set((localBlogs).flatMap((b) => b.tags || [])));
 
   return (
     <div className="space-y-8">
-      <h1 className="text-3xl font-bold">Blog</h1>
       <div className="flex gap-2 mb-4 items-center">
         <input
           type="text"
@@ -43,20 +63,10 @@ export default function BlogIndex({ blogs, lang: initialLang }) {
             <option key={tag} value={tag}>{tag}</option>
           ))}
         </select>
-        <select
-          className="border px-2 py-1 text-sm ml-2"
-          value={lang}
-          onChange={(e) => setLang(e.target.value)}
-        >
-          <option value="zh-Hant">繁體中文</option>
-          <option value="en">English</option>
-          <option value="ja">日本語</option>
-        </select>
       </div>
       <div className="flex flex-col gap-2">
         {filteredBlogs.map((post) => (
-          <Link href={`/blog/${lang}/${post.slug}`} key={post.slug} className="flex border border-line bg-paper shadow-panel">
-            {/* Left column: tag(s) */}
+          <Link href={`/blog/${locale}/${post.slug}`} key={post.slug} className="flex border border-line bg-paper shadow-panel">
             <div className="flex flex-col items-center justify-center min-w-[80px] bg-panel border-r border-line p-2 text-center">
               {post.tags?.[0] && (
                 <span className={`inline-block px-2 py-1 text-xs font-bold uppercase tracking-wider bg-secondary text-ink`}>
@@ -64,9 +74,7 @@ export default function BlogIndex({ blogs, lang: initialLang }) {
                 </span>
               )}
             </div>
-            {/* Main content */}
             <div className="flex-1 flex gap-4 p-4 items-center">
-              {/* Thumbnail if available */}
               {post.coverImage && (
                 <div className="w-28 h-16 flex-shrink-0 border border-line bg-white flex items-center justify-center overflow-hidden">
                   <img src={post.coverImage} alt="cover" className="object-cover w-full h-full" />
@@ -74,17 +82,15 @@ export default function BlogIndex({ blogs, lang: initialLang }) {
               )}
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-1">
-                  {/* Badges for tags */}
-                  <Link href={`/blog/${lang}/${post.slug}`} className="text-lg font-semibold text-primary hover:underline truncate">
-                    {post.title[lang]}
+                  <Link href={`/blog/${locale}/${post.slug}`} className="text-lg font-semibold text-primary hover:underline truncate">
+                    {post.title[locale]}
                   </Link>
                 </div>
-                <div className="text-sm text-ink/80 truncate">
-                  {post.summary[lang]}
+                <div className="text-sm text-gray-500 truncate text-wrap">
+                  {post.summary[locale] || (post.content[locale] || '').slice(0, 100) + '...'}
                 </div>
               </div>
             </div>
-            {/* Right column: author and date */}
             <div className="flex flex-col items-center justify-center min-w-[80px] border-l border-line p-2 text-center">
                 <span className="inline-block px-2 py-1 text-xs font-bold uppercase tracking-wider">
                     {typeof post.date === 'string' ? post.date : new Date(post.date).toLocaleDateString()}
@@ -95,7 +101,6 @@ export default function BlogIndex({ blogs, lang: initialLang }) {
                 </span>
               )}
             </div>
-            {/* Info column: view count*/}
             <div className="flex flex-col items-center justify-center min-w-[80px] p-2 text-center bg-panel">
               <span className="inline-block px-2 py-1 text-xs font-bold uppercase tracking-wider">
                 {post.views ? `${post.views} views` : 'No views'}

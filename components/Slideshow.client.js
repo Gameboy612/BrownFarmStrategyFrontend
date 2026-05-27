@@ -3,12 +3,18 @@
 import React, { useEffect, useState } from 'react';
 import { useLocale } from './IntlProvider.client';
 
-export default function Slideshow({ images = [], locale = null }) {
+export default function Slideshow({ images = [], locale = null, galleryByLocale = null }) {
   const [index, setIndex] = useState(0);
   const [nowMs, setNowMs] = useState(() => Date.now());
   const { t, locale: ctxLocale } = useLocale();
 
-  const currentImage = images[index];
+  // Determine which images to display: prefer explicit `images`, then `galleryByLocale` keyed by ctxLocale
+  let displayImages = Array.isArray(images) ? images : [];
+  if ((!displayImages || displayImages.length === 0) && galleryByLocale) {
+    displayImages = galleryByLocale[ctxLocale] || galleryByLocale['zh-Hant'] || Object.values(galleryByLocale)[0] || [];
+  }
+
+  const currentImage = displayImages[index];
 
   function formatCompactDuration(ms) {
     const totalSeconds = Math.max(0, Math.floor(ms / 1000));
@@ -121,14 +127,14 @@ export default function Slideshow({ images = [], locale = null }) {
     });
   }
 
-  if (!images || images.length === 0) return null;
+  if (!displayImages || displayImages.length === 0) return null;
 
   return (
     <div className="relative overflow-hidden border border-line bg-paper shadow-panel">
       <div className={`relative aspect-[16/9] ${currentImage?.url ? 'cursor-pointer' : ''}`} onClick={() => currentImage?.url && window.open(currentImage.url, '_blank')}>
         <img src={currentImage.src} alt={currentImage.alt} className="h-full w-full object-cover" />
 
-        {images.length > 1 && (
+        {displayImages.length > 1 && (
           <>
             <button
               aria-label="Previous"
@@ -168,7 +174,7 @@ export default function Slideshow({ images = [], locale = null }) {
 
         {images.length > 1 && (
           <div className={`${eventTimespan || eventDayNotice ? 'mt-3' : ''} flex justify-center gap-2`}>
-            {images.map((_, i) => (
+            {displayImages.map((_, i) => (
               <button
                 key={i}
                 onClick={() => setIndex(i)}

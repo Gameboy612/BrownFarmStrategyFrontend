@@ -5,6 +5,9 @@ Cornbread: ?
 Sugar Bread: ?
 Donut: 3
 
+Level 3:
+Castella: 1
+
 Level 5:
 Bread: 22-25
 Cornbread: ?
@@ -12,6 +15,9 @@ Sugar Bread: ?
 Donut: 6
 
 Crepe:
+Level 3:
+Chocolate Crepe: 1
+
 Level 5:
 Crepe: 6
 Apple Crepe: 4
