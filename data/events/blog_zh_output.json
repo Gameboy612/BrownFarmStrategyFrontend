@@ -1,20 +1,37 @@
 {
   "source_url": "https://forum.gamer.com.tw/B.php?bsn=29387",
   "screen_name": "bahamut-forum",
-  "fetched_at": "2026-06-22T04:07:08.010847+00:00",
+  "fetched_at": "2026-06-23T03:28:53.059619+00:00",
   "events": [
     {
-      "id": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3677&tnum=2-sec2",
+      "id": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3677&tnum=2-sec3",
       "url": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3677&tnum=2",
       "title": "【情報】列車排名賽活動登場！2026年6月22日9：59止",
       "text": "0611 小夥伴食材",
-      "start_time": "2026-06-22T00:00:00+08:00",
+      "start_time": "2026-06-22T09:59:00+08:00",
       "end_time": "2026-06-22T09:59:00+08:00",
       "media_urls": [
         {
           "src": "/images/events/event_48650701d219aa63.jpg",
           "alt": "",
           "original_src": "https://truth.bahamut.com.tw/s01/202606/forum/29387/6a16bf08fe6d7f61f2a25d1e0a616a75.JPG",
+          "processed": "cropped"
+        }
+      ],
+      "source": "linegame-blog"
+    },
+    {
+      "id": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3679&tnum=2-sec1",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3679&tnum=2",
+      "title": "【情報】大家的星星排名活動開跑！2026年6月29日9:59止",
+      "text": "左邊的小遊戲 0622",
+      "start_time": "2026-06-23T00:00:00+08:00",
+      "end_time": "2026-06-29T09:59:00+08:00",
+      "media_urls": [
+        {
+          "src": "/images/events/event_5c6f2360d236c746.jpg",
+          "alt": "",
+          "original_src": "https://truth.bahamut.com.tw/s01/202606/forum/29387/f1220f1e97ffc099c80c0e9c6e0c5386.JPG",
           "processed": "cropped"
         }
       ],
