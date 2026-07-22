@@ -1,6 +1,24 @@
 {
   "source_url": "https://forum.gamer.com.tw/B.php?bsn=29387",
   "screen_name": "bahamut-forum",
-  "fetched_at": "2026-07-21T02:33:02.231569+00:00",
-  "events": []
+  "fetched_at": "2026-07-22T02:31:49.958893+00:00",
+  "events": [
+    {
+      "id": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3597&tnum=19-sec2",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3597&tnum=19",
+      "title": "【情報】旅行季票新登場！2026年8月14日9:59止",
+      "text": "旅行季票賽季舉辦中！6月15日9:59止 旅行季票賽季舉辦中！5月14日9:59止 旅行季票賽季舉辦中！4月15日9:59止 旅行季票賽季舉辦中！3月16日9:59止 旅行季票賽季舉辦中！2月13日9:59止 旅",
+      "start_time": "2026-07-22T00:00:00+08:00",
+      "end_time": "2026-08-14T09:59:00+08:00",
+      "media_urls": [
+        {
+          "src": "/images/events/event_8b66869d74621f89.jpg",
+          "alt": "",
+          "original_src": "https://truth.bahamut.com.tw/s01/202505/forum/29387/3fc18f295b4aef5e44abb33cb3317af5.JPG",
+          "processed": "cropped"
+        }
+      ],
+      "source": "linegame-blog"
+    }
+  ]
 }
