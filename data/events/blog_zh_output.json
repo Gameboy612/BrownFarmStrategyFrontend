@@ -1,6 +1,58 @@
 {
   "source_url": "https://forum.gamer.com.tw/B.php?bsn=29387",
   "screen_name": "bahamut-forum",
-  "fetched_at": "2026-08-13T01:50:45.370142+00:00",
-  "events": []
+  "fetched_at": "2026-08-14T01:48:41.173179+00:00",
+  "events": [
+    {
+      "id": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3597&tnum=19-sec7",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3597&tnum=19",
+      "title": "【情報】旅行季票新登場！2026年8月14日9:59止",
+      "text": "旅行季票賽季舉辦中！6月15日9:59止 旅行季票賽季舉辦中！5月14日9:59止 旅行季票賽季舉辦中！4月15日9:59止 旅行季票賽季舉辦中！3月16日9:59止 旅行季票賽季舉辦中！2月13日9:59止 旅",
+      "start_time": "2026-08-14T00:00:00+08:00",
+      "end_time": "2026-08-14T09:59:00+08:00",
+      "media_urls": [
+        {
+          "src": "/images/events/event_8b66869d74621f89.jpg",
+          "alt": "",
+          "original_src": "https://truth.bahamut.com.tw/s01/202505/forum/29387/3fc18f295b4aef5e44abb33cb3317af5.JPG",
+          "processed": "cropped"
+        }
+      ],
+      "source": "linegame-blog"
+    },
+    {
+      "id": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3689&tnum=1-sec2",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3689&tnum=1",
+      "title": "【情報】「人魚美容沙龍」登場2026 年 8 月 13 日（四）10 : 00～8 月 20 日（四）09 : 59",
+      "text": "「人魚美容沙龍」活動，快來製作「美容道具」兌換特別道具",
+      "start_time": "2026-08-13T10:00:00+08:00",
+      "end_time": "2026-08-20T09:59:00+08:00",
+      "media_urls": [
+        {
+          "src": "/images/events/event_ebcb474ea7db9719.png",
+          "alt": "",
+          "original_src": "https://p2.bahamut.com.tw/B/2KU/61/f2afbb2cc6cd066c4901d3f3871zrm15.PNG",
+          "processed": "cropped"
+        }
+      ],
+      "source": "linegame-blog"
+    },
+    {
+      "id": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3690&tnum=1-sec1",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3690&tnum=1",
+      "title": "【情報】「人魚之夢」美好回憶活動!2026 年 8 月 20 日（四）10 : 00～8 月 27 日（四）09 : 59",
+      "text": "",
+      "start_time": "2026-08-20T10:00:00+08:00",
+      "end_time": "2026-08-27T09:59:00+08:00",
+      "media_urls": [
+        {
+          "src": "/images/events/event_693d40fd2f4f7be5.png",
+          "alt": "",
+          "original_src": "https://p2.bahamut.com.tw/B/2KU/57/850c4080eb285452757fab86dc1zrlx5.PNG",
+          "processed": "cropped"
+        }
+      ],
+      "source": "linegame-blog"
+    }
+  ]
 }
