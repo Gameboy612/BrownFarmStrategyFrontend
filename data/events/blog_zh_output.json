@@ -1,14 +1,14 @@
 {
   "source_url": "https://forum.gamer.com.tw/B.php?bsn=29387",
   "screen_name": "bahamut-forum",
-  "fetched_at": "2026-08-14T01:48:41.173179+00:00",
+  "fetched_at": "2026-08-15T01:07:46.639471+00:00",
   "events": [
     {
-      "id": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3597&tnum=19-sec7",
-      "url": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3597&tnum=19",
+      "id": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3597&tnum=20-sec1",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3597&tnum=20",
       "title": "【情報】旅行季票新登場！2026年8月14日9:59止",
       "text": "旅行季票賽季舉辦中！6月15日9:59止 旅行季票賽季舉辦中！5月14日9:59止 旅行季票賽季舉辦中！4月15日9:59止 旅行季票賽季舉辦中！3月16日9:59止 旅行季票賽季舉辦中！2月13日9:59止 旅",
-      "start_time": "2026-08-14T00:00:00+08:00",
+      "start_time": "2026-08-14T09:59:00+08:00",
       "end_time": "2026-08-14T09:59:00+08:00",
       "media_urls": [
         {
@@ -21,10 +21,10 @@
       "source": "linegame-blog"
     },
     {
-      "id": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3689&tnum=1-sec2",
+      "id": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3689&tnum=1-sec3",
       "url": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3689&tnum=1",
       "title": "【情報】「人魚美容沙龍」登場2026 年 8 月 13 日（四）10 : 00～8 月 20 日（四）09 : 59",
-      "text": "「人魚美容沙龍」活動，快來製作「美容道具」兌換特別道具",
+      "text": "「人魚美容沙龍」活動，快來製作「美容道具」兌換特別道具 每次都有人問 解小夥伴4個都要換過一次 由右至左製作材料數量42666",
       "start_time": "2026-08-13T10:00:00+08:00",
       "end_time": "2026-08-20T09:59:00+08:00",
       "media_urls": [
@@ -38,7 +38,7 @@
       "source": "linegame-blog"
     },
     {
-      "id": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3690&tnum=1-sec1",
+      "id": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3690&tnum=1-sec2",
       "url": "https://forum.gamer.com.tw/C.php?bsn=29387&snA=3690&tnum=1",
       "title": "【情報】「人魚之夢」美好回憶活動!2026 年 8 月 20 日（四）10 : 00～8 月 27 日（四）09 : 59",
       "text": "",
